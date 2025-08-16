@@ -9,11 +9,13 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body class="bg-light text-gray-800 font-sans">
+<body class="bg-light text-gray-800 font-sans" style="background-image: url('assets/images/back-ground3.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat; background-attachment: fixed;">
 
     <header class="bg-white shadow-md sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-brand">Siddha Durga Puja</a>
+ <a href="index.html" class="flex items-center">
+                <img src="assets/images/logo.jpg" alt="Siddha Durga Puja Logo" class="h-10 w-auto mr-2">
+            </a>
             <div class="hidden md:flex space-x-6 items-center">
                 <a href="index.html" class="text-gray-800 hover:text-brand">Home</a>
                 <a href="about.html" class="text-gray-800 hover:text-brand">About Us</a>
@@ -44,7 +46,8 @@
         </div>
     </header>
 
-    <main class="container mx-auto px-6 py-12">
+    <main class="container mx-auto px-6 py-12 max-w-4xl rounded-[2.5rem] shadow-2xl border-4 bg-white bg-opacity-95 backdrop-blur-lg flex flex-col items-center animate-fade-in"
+        style="border-image: linear-gradient(90deg, #FFD700 0%, #FF9800 100%) 1; transition: box-shadow 0.3s;">
         <h1 class="text-4xl font-bold text-center mb-12 text-brand">About Us</h1>
 
         <!-- Mission Section -->
@@ -72,30 +75,7 @@
             </div>
         </section>
 
-        <!-- Team Summary -->
-        <section class="bg-white p-8 rounded-lg shadow-lg">
-            <h2 class="text-3xl font-bold mb-8 text-center text-brand">Meet the Team</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="text-center">
-                    <img src="https://picsum.photos/200/200?image=1005" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-accent">
-                    <h3 class="text-xl font-bold">John Doe</h3>
-                    <p class="text-gray-600">President</p>
-                </div>
-                <div class="text-center">
-                    <img src="https://picsum.photos/200/200?image=1027" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-accent">
-                    <h3 class="text-xl font-bold">Jane Smith</h3>
-                    <p class="text-gray-600">Secretary</p>
-                </div>
-                <div class="text-center">
-                    <img src="https://picsum.photos/200/200?image=1011" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-accent">
-                    <h3 class="text-xl font-bold">Peter Jones</h3>
-                    <p class="text-gray-600">Treasurer</p>
-                </div>
-            </div>
-            <div class="text-center mt-8">
-                <a href="members.html" class="text-brand hover:underline">See all office bearers</a>
-            </div>
-        </section>
+        
     </main>
 
     <footer class="bg-gray-800 text-white py-8">

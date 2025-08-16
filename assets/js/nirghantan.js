@@ -6,16 +6,35 @@ document.addEventListener('DOMContentLoaded', function() {
         { term: 'Prasad', definition: 'A devotional offering made to a god, typically consisting of food that is later shared among devotees.' }
     ];
 
-    const glossaryContainer = document.getElementById('glossaryContainer');
+    const glossaryContainer = document.getElementById('glossaryContainer1');
     const searchInput = document.getElementById('searchInput');
 
     function renderGlossary(items) {
         glossaryContainer.innerHTML = '';
-        items.forEach(item => {
-            const entry = document.createElement('div');
-            entry.className = 'bg-white p-4 rounded-lg shadow';
-            entry.innerHTML = `<h3 class="text-xl font-bold">${item.term}</h3><p>${item.definition}</p>`;
-            glossaryContainer.appendChild(entry);
+        items.forEach((item, idx) => {
+            const accordion = document.createElement('div');
+            accordion.className = 'accordion-item mb-2 border rounded-lg overflow-hidden';
+
+            const header = document.createElement('button');
+            header.className = 'accordion-header w-full text-left px-4 py-3 bg-gray-100 font-bold focus:outline-none';
+            header.innerText = item.term;
+            header.setAttribute('aria-expanded', 'false');
+            header.setAttribute('aria-controls', `accordion-content-${idx}`);
+
+            const content = document.createElement('div');
+            content.className = 'accordion-content px-4 py-2 bg-white hidden';
+            content.id = `accordion-content-${idx}`;
+            content.innerHTML = `<p>${item.definition}</p>`;
+
+            header.addEventListener('click', function() {
+                const expanded = header.getAttribute('aria-expanded') === 'true';
+                header.setAttribute('aria-expanded', !expanded);
+                content.classList.toggle('hidden');
+            });
+
+            accordion.appendChild(header);
+            accordion.appendChild(content);
+            glossaryContainer.appendChild(accordion);
         });
     }
 

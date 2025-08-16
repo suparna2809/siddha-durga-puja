@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,14 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body class="bg-light text-gray-800 font-sans">
+
+<body class="bg-light text-gray-800 font-sans" style="background-image: url('assets/images/back-ground3.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat; background-attachment: fixed;">
 
     <header class="bg-white shadow-md sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-brand">Siddha Durga Puja</a>
-            <div class="hidden md:flex space-x-6 items-center">
+ <a href="index.html" class="flex items-center">
+                <img src="assets/images/logo.jpg" alt="Siddha Durga Puja Logo" class="h-10 w-auto mr-2">
+            </a>            <div class="hidden md:flex space-x-6 items-center">
                 <a href="index.html" class="text-gray-800 hover:text-brand">Home</a>
                 <a href="about.html" class="text-gray-800 hover:text-brand">About Us</a>
                 <a href="nirghantan.html" class="text-gray-800 hover:text-brand">Nirghantan</a>
@@ -24,10 +27,15 @@
                 <a href="news.html" class="text-gray-800 hover:text-brand">News</a>
                 <a href="contact.html" class="text-gray-800 hover:text-brand">Contact</a>
             </div>
-            <a href="subscription.html" class="hidden md:block bg-brand text-white px-4 py-2 rounded-full hover:bg-brand-dark">Subscribe</a>
+            <a href="subscription.html"
+                class="hidden md:block bg-brand text-white px-4 py-2 rounded-full hover:bg-brand-dark">Subscribe</a>
             <div class="md:hidden">
                 <button id="hamburger" class="text-gray-800 focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
                 </button>
             </div>
         </nav>
@@ -40,19 +48,82 @@
             <a href="gallery.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Gallery</a>
             <a href="news.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">News</a>
             <a href="contact.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Contact</a>
-            <a href="subscription.html" class="block px-4 py-2 text-sm bg-brand text-white text-center rounded-md m-2">Subscribe</a>
+            <a href="subscription.html"
+                class="block px-4 py-2 text-sm bg-brand text-white text-center rounded-md m-2">Subscribe</a>
         </div>
     </header>
 
     <main class="container mx-auto px-6 py-12">
-        <h1 class="text-4xl font-bold text-center mb-12 text-brand">Nirghantan (Glossary)</h1>
-
-        <div class="mb-8">
-            <input type="text" id="searchInput" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent" placeholder="Search for a term...">
-        </div>
-
+        <h1 class="text-4xl font-bold text-center mb-12 text-brand">Shri Shri Durga Puja 2024 - Nirghanta</h1>
         <div id="glossaryContainer" class="space-y-4">
             <!-- Glossary items will be injected here by JavaScript -->
+            <div class="max-w-4xl mx-auto p-6">
+                <!-- Panchami -->
+                <div class="border rounded-2xl shadow p-4 mb-4 bg-yellow-50">
+                    <h2 class="text-xl font-semibold text-red-600">Panchami - Tuesday, 8th October 2024</h2>
+                    <ul class="mt-2 space-y-1 text-gray-700">
+                        <li>06:30 p.m. - Bodhan</li>
+                    </ul>
+                </div>
+
+                <!-- Shashthi -->
+                <div class="border rounded-2xl shadow p-4 mb-4 bg-yellow-50">
+                    <h2 class="text-xl font-semibold text-red-600">Shashthi - Wednesday, 9th October 2024</h2>
+                    <ul class="mt-2 space-y-1 text-gray-700">
+                        <li>06:40 a.m. - Kalparambha</li>
+                        <li>06:30 p.m. - Amantran & Adhivas</li>
+                    </ul>
+                </div>
+
+                <!-- Saptami -->
+                <div class="border rounded-2xl shadow p-4 mb-4 bg-yellow-50">
+                    <h2 class="text-xl font-semibold text-red-600">Saptami - Thursday, 10th October 2024</h2>
+                    <ul class="mt-2 space-y-1 text-gray-700">
+                        <li>06:40 a.m. - Saptami Puja</li>
+                        <li>12:30 p.m. - Pushpanjali (after Bhog)</li>
+                    </ul>
+                </div>
+
+                <!-- Mahashtami -->
+                <div class="border rounded-2xl shadow p-4 mb-4 bg-yellow-50">
+                    <h2 class="text-xl font-semibold text-red-600">Mahashtami - Friday, 11th October 2024</h2>
+                    <ul class="mt-2 space-y-1 text-gray-700">
+                        <li>06:40 a.m. - Ashtami Puja</li>
+                        <li>08:45 a.m. - Kumari Puja</li>
+                        <li>11:43 a.m. to 12:31 p.m. - Sandhi Puja</li>
+                        <li>Pushpanjali (after Sandhi Puja)</li>
+                    </ul>
+                </div>
+
+                <!-- Mahanavami -->
+                <div class="border rounded-2xl shadow p-4 mb-4 bg-yellow-50">
+                    <h2 class="text-xl font-semibold text-red-600">Mahanavami - Saturday, 12th October 2024</h2>
+                    <ul class="mt-2 space-y-1 text-gray-700">
+                        <li>06:40 a.m. - Navami Puja</li>
+                        <li>09:30 a.m. - Pushpanjali (after Bhog)</li>
+                        <li>09:40 a.m. - Havan</li>
+                    </ul>
+                </div>
+
+                <!-- Vijaya Dashami -->
+                <div class="border rounded-2xl shadow p-4 mb-4 bg-yellow-50">
+                    <h2 class="text-xl font-semibold text-red-600">Vijayadashami - Sunday, 13th October 2024</h2>
+                    <ul class="mt-2 space-y-1 text-gray-700">
+                        <li>06:15 a.m. - Dashami Puja</li>
+                        <li>07:50 a.m. - Pushpanjali</li>
+                        <li>08:45 a.m. - Darpan Visarjan</li>
+                        <li>04:00 p.m. - Immersion of image at Gandhi Ghat, Juhu</li>
+                    </ul>
+                </div>
+
+                <!-- Notes -->
+                <div class="mt-6 p-4 border rounded-xl bg-red-100 text-center text-red-800">
+                    <p>🍛 Prasad Distribution on Saptami, Ashtami, Navami days at about 1:00 p.m.</p>
+                    <p>🕯️ Evening Arati & Bhajans at 7:15 p.m. onwards.</p>
+                    <p class="font-bold mt-2">ALL ARE MOST WELCOME</p>
+                </div>
+            </div>
+
         </div>
     </main>
 
@@ -67,4 +138,5 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/nirghantan.js"></script>
 </body>
+
 </html>
