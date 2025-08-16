@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Siddha Durga Puja</title>
+    <meta name="description" content="Learn about the history and mission of the Siddha Durga Puja committee.">
+    <link rel="canonical" href="https://example.com/about.html">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-light text-gray-800 font-sans">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-brand">Siddha Durga Puja</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="index.html" class="text-gray-800 hover:text-brand">Home</a>
+                <a href="about.html" class="text-gray-800 hover:text-brand">About Us</a>
+                <a href="nirghantan.html" class="text-gray-800 hover:text-brand">Nirghantan</a>
+                <a href="subscription.html" class="text-gray-800 hover:text-brand">Subscription</a>
+                <a href="members.html" class="text-gray-800 hover:text-brand">Members</a>
+                <a href="gallery.html" class="text-gray-800 hover:text-brand">Gallery</a>
+                <a href="news.html" class="text-gray-800 hover:text-brand">News</a>
+                <a href="contact.html" class="text-gray-800 hover:text-brand">Contact</a>
+            </div>
+            <a href="subscription.html" class="hidden md:block bg-brand text-white px-4 py-2 rounded-full hover:bg-brand-dark">Subscribe</a>
+            <div class="md:hidden">
+                <button id="hamburger" class="text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <a href="index.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Home</a>
+            <a href="about.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">About Us</a>
+            <a href="nirghantan.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Nirghantan</a>
+            <a href="subscription.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Subscription</a>
+            <a href="members.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Members</a>
+            <a href="gallery.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Gallery</a>
+            <a href="news.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">News</a>
+            <a href="contact.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Contact</a>
+            <a href="subscription.html" class="block px-4 py-2 text-sm bg-brand text-white text-center rounded-md m-2">Subscribe</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <h1 class="text-4xl font-bold text-center mb-12 text-brand">About Us</h1>
+
+        <!-- Mission Section -->
+        <section class="mb-12 bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-bold mb-4 text-brand">Our Mission</h2>
+            <p class="text-lg">Our mission is to foster a sense of community and cultural pride by organizing the annual Siddha Durga Puja. We aim to create an inclusive environment where traditions are celebrated and passed down to future generations. We are committed to organizing cultural events, social gatherings, and charitable activities throughout the year.</p>
+        </section>
+
+        <!-- History Timeline -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-8 text-brand">Our History</h2>
+            <div class="border-l-4 border-brand ml-4 pl-8">
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold">2010 - The Beginning</h3>
+                    <p>A small group of enthusiasts came together to organize the first Siddha Durga Puja in a local community hall.</p>
+                </div>
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold">2015 - Growth and Expansion</h3>
+                    <p>The celebration grew, attracting more families and moving to a larger venue to accommodate the growing community.</p>
+                </div>
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold">2020 - A New Chapter</h3>
+                    <p>We officially registered as a non-profit organization, expanding our activities to include year-round cultural and social events.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Summary -->
+        <section class="bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-bold mb-8 text-center text-brand">Meet the Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <img src="https://picsum.photos/200/200?image=1005" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-accent">
+                    <h3 class="text-xl font-bold">John Doe</h3>
+                    <p class="text-gray-600">President</p>
+                </div>
+                <div class="text-center">
+                    <img src="https://picsum.photos/200/200?image=1027" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-accent">
+                    <h3 class="text-xl font-bold">Jane Smith</h3>
+                    <p class="text-gray-600">Secretary</p>
+                </div>
+                <div class="text-center">
+                    <img src="https://picsum.photos/200/200?image=1011" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-accent">
+                    <h3 class="text-xl font-bold">Peter Jones</h3>
+                    <p class="text-gray-600">Treasurer</p>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <a href="members.html" class="text-brand hover:underline">See all office bearers</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="text-center text-gray-400">
+                &copy; 2025 Siddha Durga Puja. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

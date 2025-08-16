@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - Siddha Durga Puja</title>
+    <meta name="description" content="Latest news and updates from the Siddha Durga Puja committee.">
+    <link rel="canonical" href="https://example.com/news.html">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-light text-gray-800 font-sans">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-brand">Siddha Durga Puja</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="index.html" class="text-gray-800 hover:text-brand">Home</a>
+                <a href="about.html" class="text-gray-800 hover:text-brand">About Us</a>
+                <a href="nirghantan.html" class="text-gray-800 hover:text-brand">Nirghantan</a>
+                <a href="subscription.html" class="text-gray-800 hover:text-brand">Subscription</a>
+                <a href="members.html" class="text-gray-800 hover:text-brand">Members</a>
+                <a href="gallery.html" class="text-gray-800 hover:text-brand">Gallery</a>
+                <a href="news.html" class="text-gray-800 hover:text-brand">News</a>
+                <a href="contact.html" class="text-gray-800 hover:text-brand">Contact</a>
+            </div>
+            <a href="subscription.html" class="hidden md:block bg-brand text-white px-4 py-2 rounded-full hover:bg-brand-dark">Subscribe</a>
+            <div class="md:hidden">
+                <button id="hamburger" class="text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <a href="index.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Home</a>
+            <a href="about.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">About Us</a>
+            <a href="nirghantan.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Nirghantan</a>
+            <a href="subscription.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Subscription</a>
+            <a href="members.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Members</a>
+            <a href="gallery.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Gallery</a>
+            <a href="news.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">News</a>
+            <a href="contact.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Contact</a>
+            <a href="subscription.html" class="block px-4 py-2 text-sm bg-brand text-white text-center rounded-md m-2">Subscribe</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <h1 class="text-4xl font-bold text-center mb-12 text-brand">News Feed</h1>
+
+        <div id="newsFeed" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- News articles will be loaded here -->
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="text-center text-gray-400">
+                &copy; 2025 Siddha Durga Puja. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('assets/news.json')
+                .then(response => response.json())
+                .then(data => {
+                    const newsFeed = document.getElementById('newsFeed');
+                    data.forEach(article => {
+                        const articleElement = document.createElement('div');
+                        articleElement.className = 'bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300';
+                        articleElement.innerHTML = `
+                            <h2 class="text-2xl font-bold mb-2 text-brand">${article.title}</h2>
+                            <p class="text-gray-600 mb-4">${article.summary}</p>
+                            <span class="text-sm font-semibold text-accent bg-accent-light px-2 py-1 rounded-full">${article.category}</span>
+                        `;
+                        newsFeed.appendChild(articleElement);
+                    });
+                })
+                .catch(error => console.error('Error fetching news:', error));
+        });
+    </script>
+</body>
+</html>

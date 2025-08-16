@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddha Durga Puja - Home</title>
+    <meta name="description" content="Official website for the Siddha Durga Puja committee.">
+    <link rel="canonical" href="https://example.com/index.html">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Siddha Durga Puja",
+      "url": "https://example.com",
+      "logo": "https://example.com/assets/images/logo.png"
+    }
+    </script>
+</head>
+<body class="bg-light text-gray-800 font-sans">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <img src="assets/images/logo.jpg" alt="Siddha Durga Puja Logo" class="h-10 w-auto mr-2">
+            </a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="index.html" class="text-gray-800 hover:text-brand">Home</a>
+                <a href="about.html" class="text-gray-800 hover:text-brand">About Us</a>
+                <a href="nirghantan.html" class="text-gray-800 hover:text-brand">Nirghantan</a>
+                <a href="subscription.html" class="text-gray-800 hover:text-brand">Subscription</a>
+                <a href="members.html" class="text-gray-800 hover:text-brand">Members</a>
+                <a href="gallery.html" class="text-gray-800 hover:text-brand">Gallery</a>
+                <a href="news.html" class="text-gray-800 hover:text-brand">News</a>
+                <a href="contact.html" class="text-gray-800 hover:text-brand">Contact</a>
+            </div>
+            <a href="subscription.html" class="hidden md:block bg-brand text-white px-4 py-2 rounded-full hover:bg-brand-dark">Subscribe</a>
+            <div class="md:hidden">
+                <button id="hamburger" class="text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <a href="index.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Home</a>
+            <a href="about.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">About Us</a>
+            <a href="nirghantan.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Nirghantan</a>
+            <a href="subscription.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Subscription</a>
+            <a href="members.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Members</a>
+            <a href="gallery.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Gallery</a>
+            <a href="news.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">News</a>
+            <a href="contact.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Contact</a>
+            <a href="subscription.html" class="block px-4 py-2 text-sm bg-brand text-white text-center rounded-md m-2">Subscribe</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Slider -->
+        <section class="hero-slider relative">
+            <div>
+                <img src="assets/images/image1.jpg?q=80&w=1932&auto=format&fit=crop" alt="Durga Puja celebration with crowd" class="w-full h-96 object-cover"/>
+                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-black bg-opacity-30">
+                    <div class="text-center">
+                        <h1 class="text-white text-4xl font-bold uppercase md:text-5xl">Welcome to <span class="text-accent">Siddha Durga Puja</span></h1>
+                        <p class="text-white text-lg mt-4">Celebrating tradition, culture, and community.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="https://i.pinimg.com/1200x/d0/81/58/d0815888d39ee7501360575403d8258d.jpg?q=80&w=1935&auto=format&fit=crop" alt="Beautifully decorated Durga idol" class="w-full h-96 object-cover"/>
+                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-black bg-opacity-30">
+                    <div class="text-center">
+                         <h1 class="text-white text-4xl font-bold uppercase md:text-5xl">Unity in <span class="text-accent">Community</span></h1>
+                        <p class="text-white text-lg mt-4">Embracing our shared culture and values.</p>
+                       
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="assets/images/banner5.jpg?q=80&w=1887&auto=format&fit=crop" alt="Cultural performance during Puja" class="w-full h-96 object-cover"/>
+                <div class="absolute inset-0 flex items-center justify-center h-full w-full bg-black bg-opacity-30">
+                    <div class="text-center">
+                         <h1 class="text-white text-4xl font-bold uppercase md:text-5xl">Experience the <span class="text-accent">Divine Festivities</span></h1>
+                        <p class="text-white text-lg mt-4">Join us for an unforgettable celebration.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Cards -->
+        <section class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <h2 class="text-2xl font-bold mb-2 text-brand">Our Mission</h2>
+                    <p>To preserve and promote our cultural heritage through the celebration of Durga Puja.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <h2 class="text-2xl font-bold mb-2 text-brand">Get Involved</h2>
+                    <p>Join us as a volunteer or member to be a part of our vibrant community.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <h2 class="text-2xl font-bold mb-2 text-brand">Upcoming Events</h2>
+                    <p>Stay tuned for announcements about our upcoming events and celebrations.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest News Teaser -->
+        <section class="bg-white py-12">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-8 text-brand">Latest News</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 home-news-feed">
+                    <!-- News items will be loaded here from news.json -->
+                </div>
+                <div class="text-center mt-8">
+                    <a href="news.html" class="text-brand hover:underline">View all news</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="container mx-auto px-6 py-12 text-center">
+            <h2 class="text-3xl font-bold mb-4 text-brand">Become a Subscriber</h2>
+            <p class="mb-8">Get exclusive updates and benefits by subscribing to one of our plans.</p>
+            <a href="subscription.html" class="bg-brand text-white px-8 py-3 rounded-full hover:bg-brand-dark text-lg">View Plans</a>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-bold mb-2 text-accent">Sitemap</h3>
+                    <ul>
+                        <li><a href="index.html" class="hover:underline">Home</a></li>
+                        <li><a href="about.html" class="hover:underline">About Us</a></li>
+                        <li><a href="subscription.html" class="hover:underline">Subscription</a></li>
+                        <li><a href="contact.html" class="hover:underline">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-2 text-accent">Legal</h3>
+                    <ul>
+                        <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:underline">Terms of Service</a></li>
+                        <li><a href="#" class="hover:underline">Accessibility Statement</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-2 text-accent">Connect</h3>
+                    <!-- Social media icons would go here -->
+                </div>
+                <div>
+                    <h3 class="font-bold mb-2 text-accent">Newsletter</h3>
+                    <form>
+                        <input type="email" placeholder="Your email" class="w-full p-2 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-accent">
+                        <button type="submit" class="w-full bg-brand mt-2 px-4 py-2 rounded hover:bg-brand-dark">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center mt-8 text-sm text-gray-400">
+                &copy; 2025 Siddha Durga Puja. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.hero-slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear',
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false
+            });
+        });
+    </script>
+</body>
+</html>

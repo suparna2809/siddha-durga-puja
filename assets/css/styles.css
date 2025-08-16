@@ -1,0 +1,53 @@
+/* Add your custom styles here */
+:root {
+    --brand-color: #D32F2F; /* A deep, traditional red */
+    --brand-color-dark: #B71C1C; /* A darker red for hover states */
+    --accent-color: #FFC107; /* A vibrant golden yellow */
+    --bg-light: #FFF8E1; /* A very light cream/off-white, like parchment */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-light); /* Use the new light background */
+    color: #374151; /* A slightly softer black for text */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif;
+}
+
+/* Custom utility classes for brand colors */
+.bg-brand {
+    background-color: var(--brand-color);
+    color: white;
+}
+
+.hover\:bg-brand-dark:hover {
+    background-color: var(--brand-color-dark);
+    color: white;
+}
+
+.text-brand {
+    color: var(--brand-color);
+}
+
+.hover\:text-brand:hover {
+    color: var(--brand-color);
+}
+
+.text-accent {
+    color: var(--accent-color);
+}
+
+.hover\:text-accent:hover {
+    color: var(--accent-color);
+}
+
+.border-brand {
+    border-color: var(--brand-color);
+}
+
+/* Update nav link hover color */
+header a:hover {
+    color: var(--brand-color);
+}

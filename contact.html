@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Siddha Durga Puja</title>
+    <meta name="description" content="Get in touch with the Siddha Durga Puja committee.">
+    <link rel="canonical" href="https://example.com/contact.html">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-light text-gray-800 font-sans">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-brand">Siddha Durga Puja</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="index.html" class="text-gray-800 hover:text-brand">Home</a>
+                <a href="about.html" class="text-gray-800 hover:text-brand">About Us</a>
+                <a href="nirghantan.html" class="text-gray-800 hover:text-brand">Nirghantan</a>
+                <a href="subscription.html" class="text-gray-800 hover:text-brand">Subscription</a>
+                <a href="members.html" class="text-gray-800 hover:text-brand">Members</a>
+                <a href="gallery.html" class="text-gray-800 hover:text-brand">Gallery</a>
+                <a href="news.html" class="text-gray-800 hover:text-brand">News</a>
+                <a href="contact.html" class="text-gray-800 hover:text-brand">Contact</a>
+            </div>
+            <a href="subscription.html" class="hidden md:block bg-brand text-white px-4 py-2 rounded-full hover:bg-brand-dark">Subscribe</a>
+            <div class="md:hidden">
+                <button id="hamburger" class="text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <a href="index.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Home</a>
+            <a href="about.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">About Us</a>
+            <a href="nirghantan.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Nirghantan</a>
+            <a href="subscription.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Subscription</a>
+            <a href="members.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Members</a>
+            <a href="gallery.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Gallery</a>
+            <a href="news.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">News</a>
+            <a href="contact.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Contact</a>
+            <a href="subscription.html" class="block px-4 py-2 text-sm bg-brand text-white text-center rounded-md m-2">Subscribe</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <h1 class="text-4xl font-bold text-center mb-12 text-brand">Contact Us</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-bold mb-6 text-brand">Get in Touch</h2>
+                <form id="contactForm">
+                    <div class="mb-4">
+                        <label for="contactName" class="block text-gray-700">Name</label>
+                        <input type="text" id="contactName" class="w-full p-2 border border-gray-300 rounded mt-1 focus:ring-2 focus:ring-accent" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="contactEmail" class="block text-gray-700">Email</label>
+                        <input type="email" id="contactEmail" class="w-full p-2 border border-gray-300 rounded mt-1 focus:ring-2 focus:ring-accent" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-gray-700">Message</label>
+                        <textarea id="message" rows="5" class="w-full p-2 border border-gray-300 rounded mt-1 focus:ring-2 focus:ring-accent" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-brand text-white p-3 rounded-lg hover:bg-brand-dark">Send Message</button>
+                </form>
+                <div id="contactSuccessMessage" class="hidden mt-4 p-4 bg-green-100 text-green-800 rounded">
+                    Your message has been sent successfully!
+                </div>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-bold mb-6 text-brand">Our Location</h2>
+                <div class="bg-gray-300 h-64 rounded-lg overflow-hidden">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233449.6565953444!2d88.20114550129765!3d22.67635189613444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal%2C%20India!5e0!3m2!1sen!2sus!4v1678886666666!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="mt-6 text-gray-700">
+                    <p class="mb-2"><strong>Address:</strong> 123 Puja Lane, Community City, Kolkata, 12345</p>
+                    <p><strong>Email:</strong> <a href="mailto:contact@siddhadurgapuja.com" class="text-brand hover:underline">contact@siddhadurgapuja.com</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="text-center text-gray-400">
+                &copy; 2025 Siddha Durga Puja. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

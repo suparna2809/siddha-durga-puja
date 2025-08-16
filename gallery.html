@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Siddha Durga Puja</title>
+    <meta name="description" content="Photo gallery of the Siddha Durga Puja celebrations.">
+    <link rel="canonical" href="https://example.com/gallery.html">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-light text-gray-800 font-sans">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-brand">Siddha Durga Puja</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="index.html" class="text-gray-800 hover:text-brand">Home</a>
+                <a href="about.html" class="text-gray-800 hover:text-brand">About Us</a>
+                <a href="nirghantan.html" class="text-gray-800 hover:text-brand">Nirghantan</a>
+                <a href="subscription.html" class="text-gray-800 hover:text-brand">Subscription</a>
+                <a href="members.html" class="text-gray-800 hover:text-brand">Members</a>
+                <a href="gallery.html" class="text-gray-800 hover:text-brand">Gallery</a>
+                <a href="news.html" class="text-gray-800 hover:text-brand">News</a>
+                <a href="contact.html" class="text-gray-800 hover:text-brand">Contact</a>
+            </div>
+            <a href="subscription.html" class="hidden md:block bg-brand text-white px-4 py-2 rounded-full hover:bg-brand-dark">Subscribe</a>
+            <div class="md:hidden">
+                <button id="hamburger" class="text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <a href="index.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Home</a>
+            <a href="about.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">About Us</a>
+            <a href="nirghantan.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Nirghantan</a>
+            <a href="subscription.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Subscription</a>
+            <a href="members.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Members</a>
+            <a href="gallery.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Gallery</a>
+            <a href="news.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">News</a>
+            <a href="contact.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Contact</a>
+            <a href="subscription.html" class="block px-4 py-2 text-sm bg-brand text-white text-center rounded-md m-2">Subscribe</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <h1 class="text-4xl font-bold text-center mb-12 text-brand">Gallery</h1>
+
+        <div id="galleryGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <!-- Replace with relevant Durga Puja images -->
+            <img src="assets/images/idol1.jpg?q=80&w=1935&auto=format&fit=crop" alt="Durga Idol" class="w-full h-80 object-cover rounded-lg cursor-pointer transform hover:scale-105 transition-transform duration-300" loading="lazy">
+            <img src="assets/images/idol2.jpg?q=80&w=1932&auto=format&fit=crop" alt="Pandal Decoration" class="w-full h-80 object-cover rounded-lg cursor-pointer transform hover:scale-105 transition-transform duration-300" loading="lazy">
+            <img src="assets/images/idol3.jpg?q=80&w=1887&auto=format&fit=crop" alt="Cultural Program" class="w-full h-80 object-cover rounded-lg cursor-pointer transform hover:scale-105 transition-transform duration-300" loading="lazy">
+            <img src="assets/images/idol4.jpg?q=80&w=2070&auto=format&fit=crop" alt="Aarti Ceremony" class="w-full h-80 object-cover rounded-lg cursor-pointer transform hover:scale-105 transition-transform duration-300" loading="lazy">
+            <img src="assets/images/idol9.jpg?q=80&w=1932&auto=format&fit=crop" alt="Devotees" class="w-full h-80 object-cover rounded-lg cursor-pointer transform hover:scale-105 transition-transform duration-300" loading="lazy">
+            <img src="assets/images/idol6.jpg?q=80&w=1935&auto=format&fit=crop" alt="Prasad Distribution" class="w-full h-80 object-cover rounded-lg cursor-pointer transform hover:scale-105 transition-transform duration-300" loading="lazy">
+            <img src="assets/images/idol7.jpg?q=80&w=1887&auto=format&fit=crop" alt="Immersion Procession" class="w-full h-80 object-cover rounded-lg cursor-pointer transform hover:scale-105 transition-transform duration-300" loading="lazy">
+            <img src="assets/images/idol8.jpg?q=80&w=2070&auto=format&fit=crop" alt="Dhunuchi Dance" class="w-full h-80 object-cover rounded-lg cursor-pointer transform hover:scale-105 transition-transform duration-300" loading="lazy">
+            <img src="assets/images/idol10.jpg?q=80&w=2070&auto=format&fit=crop" alt="Dhunuchi Dance" class="w-full h-80 object-cover rounded-lg cursor-pointer transform hover:scale-105 transition-transform duration-300" loading="lazy">
+        </div>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-80 hidden items-center justify-center z-50">
+        <button id="closeLightbox" class="absolute top-4 right-4 text-white text-4xl font-bold focus:outline-none" aria-label="Close lightbox">&times;</button>
+        <img id="lightboxImage" src="" alt="Lightbox image" class="max-w-[90vw] max-h-[80vh] rounded-lg">
+        <button id="prevImage" class="absolute left-4 text-white text-4xl font-bold focus:outline-none" aria-label="Previous image">&#10094;</button>
+        <button id="nextImage" class="absolute right-4 text-white text-4xl font-bold focus:outline-none" aria-label="Next image">&#10095;</button>
+    </div>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="text-center text-gray-400">
+                &copy; 2025 Siddha Durga Puja. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/gallery.js"></script>
+</body>
+</html>
