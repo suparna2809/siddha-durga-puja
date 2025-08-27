@@ -1,34 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - Siddha Durga Puja</title>
-    <meta name="description" content="Photo gallery of the Siddha Durga Puja celebrations.">
+    <title>Gallery Albums - Siddha Durga Puja</title>
+    <meta name="description" content="Photo gallery albums of the Siddha Durga Puja celebrations.">
     <link rel="canonical" href="https://example.com/gallery.html">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body class="bg-light text-gray-800 font-sans" style="background-image: url('assets/images/back-ground3.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat; background-attachment: fixed;">
 
+<body class="bg-light text-gray-800 font-sans"
+    style="background-image: url('assets/images/back-ground3.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat; background-attachment: fixed;">
+
+    <!-- Header -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
- <a href="index.html" class="flex items-center">
+            <a href="index.html" class="flex items-center">
                 <img src="assets/images/logo.jpg" alt="Siddha Durga Puja Logo" class="h-10 w-auto mr-2">
-            </a>            <div class="hidden md:flex space-x-6 items-center">
+            </a>
+            <div class="hidden md:flex space-x-6 items-center">
                 <a href="index.html" class="text-gray-800 hover:text-brand">Home</a>
                 <a href="about.html" class="text-gray-800 hover:text-brand">About Us</a>
                 <a href="nirghantan.html" class="text-gray-800 hover:text-brand">Nirghantan</a>
                 <a href="subscription.html" class="text-gray-800 hover:text-brand">Subscription</a>
+                <a href="sponsership.html" class="text-gray-800 hover:text-brand">Sponsership</a>
                 <a href="members.html" class="text-gray-800 hover:text-brand">Members</a>
-                <a href="gallery.html" class="text-gray-800 hover:text-brand">Gallery</a>
+                <a href="gallery.html" class="text-brand">Gallery</a>
                 <a href="news.html" class="text-gray-800 hover:text-brand">News</a>
                 <a href="contact.html" class="text-gray-800 hover:text-brand">Contact</a>
             </div>
-            <a href="subscription.html" class="hidden md:block bg-brand text-white px-4 py-2 rounded-full hover:bg-brand-dark">Subscribe</a>
+            <a href="subscription.html"
+                class="hidden md:block bg-brand text-white px-4 py-2 rounded-full hover:bg-brand-dark">Subscribe</a>
             <div class="md:hidden">
                 <button id="hamburger" class="text-gray-800 focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
                 </button>
             </div>
         </nav>
@@ -41,35 +52,67 @@
             <a href="gallery.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Gallery</a>
             <a href="news.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">News</a>
             <a href="contact.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Contact</a>
-            <a href="subscription.html" class="block px-4 py-2 text-sm bg-brand text-white text-center rounded-md m-2">Subscribe</a>
+            <a href="subscription.html"
+                class="block px-4 py-2 text-sm bg-brand text-white text-center rounded-md m-2">Subscribe</a>
         </div>
     </header>
 
+    <!-- Main Gallery Albums -->
     <main class="container mx-auto px-6 py-12">
-        <h1 class="text-4xl font-bold text-center mb-12 text-brand">Gallery</h1>
+        <h1 class="text-4xl font-bold text-center mb-12 text-brand">Gallery Albums</h1>
 
-        <div id="galleryGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            <!-- Replace with relevant Durga Puja images -->
-            <img src="assets/images/idol1.jpg?q=80&w=1935&auto=format&fit=crop" alt="Durga Idol" class="w-full h-80 object-cover rounded-lg cursor-pointer transform hover:scale-105 transition-transform duration-300" loading="lazy">
-            <img src="assets/images/idol2.jpg?q=80&w=1932&auto=format&fit=crop" alt="Pandal Decoration" class="w-full h-80 object-cover rounded-lg cursor-pointer transform hover:scale-105 transition-transform duration-300" loading="lazy">
-            <img src="assets/images/idol3.jpg?q=80&w=1887&auto=format&fit=crop" alt="Cultural Program" class="w-full h-80 object-cover rounded-lg cursor-pointer transform hover:scale-105 transition-transform duration-300" loading="lazy">
-            <img src="assets/images/idol4.jpg?q=80&w=2070&auto=format&fit=crop" alt="Aarti Ceremony" class="w-full h-80 object-cover rounded-lg cursor-pointer transform hover:scale-105 transition-transform duration-300" loading="lazy">
-            <img src="assets/images/idol9.jpg?q=80&w=1932&auto=format&fit=crop" alt="Devotees" class="w-full h-80 object-cover rounded-lg cursor-pointer transform hover:scale-105 transition-transform duration-300" loading="lazy">
-            <img src="assets/images/idol6.jpg?q=80&w=1935&auto=format&fit=crop" alt="Prasad Distribution" class="w-full h-80 object-cover rounded-lg cursor-pointer transform hover:scale-105 transition-transform duration-300" loading="lazy">
-            <img src="assets/images/idol7.jpg?q=80&w=1887&auto=format&fit=crop" alt="Immersion Procession" class="w-full h-80 object-cover rounded-lg cursor-pointer transform hover:scale-105 transition-transform duration-300" loading="lazy">
-            <img src="assets/images/idol8.jpg?q=80&w=2070&auto=format&fit=crop" alt="Dhunuchi Dance" class="w-full h-80 object-cover rounded-lg cursor-pointer transform hover:scale-105 transition-transform duration-300" loading="lazy">
-            <img src="assets/images/idol10.jpg?q=80&w=2070&auto=format&fit=crop" alt="Dhunuchi Dance" class="w-full h-80 object-cover rounded-lg cursor-pointer transform hover:scale-105 transition-transform duration-300" loading="lazy">
+        <div id="albumGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+            <!-- Album Card Example -->
+            <div data-album="2023-10-20"
+                class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
+                <img src="assets/images/newgallery/0ad3f30f-b7ae-4a57-bc89-27c2a8abdd03.jpg" alt="Album 2023-10-20"
+                    class="w-full h-56 object-cover">
+                <div class="p-4 text-center">
+                    <h2 class="text-lg font-semibold text-brand">2023-10-20</h2>
+                    <p class="text-sm text-gray-500">View Album</p>
+                </div>
+            </div>
+
+            <div data-album="2023-10-21"
+                class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
+                <img src="assets/images/newgallery/4a36f480-2a21-45e8-8d79-9f8c0a9d072a.jpg" alt="Album 2023-10-21"
+                    class="w-full h-56 object-cover">
+                <div class="p-4 text-center">
+                    <h2 class="text-lg font-semibold text-brand">2023-10-21</h2>
+                    <p class="text-sm text-gray-500">View Album</p>
+                </div>
+            </div>
+
+            <div data-album="2023-10-22"
+                class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
+                <img src="assets/images/newgallery/6e6d3e42-2b23-4aca-87e5-516527eb0393.jpg" alt="Album 2023-10-22"
+                    class="w-full h-56 object-cover">
+                <div class="p-4 text-center">
+                    <h2 class="text-lg font-semibold text-brand">2023-10-22</h2>
+                    <p class="text-sm text-gray-500">View Album</p>
+                </div>
+            </div>
+
         </div>
     </main>
 
     <!-- Lightbox Modal -->
-    <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-80 hidden items-center justify-center z-50">
-        <button id="closeLightbox" class="absolute top-4 right-4 text-white text-4xl font-bold focus:outline-none" aria-label="Close lightbox">&times;</button>
-        <img id="lightboxImage" src="" alt="Lightbox image" class="max-w-[90vw] max-h-[80vh] rounded-lg">
-        <button id="prevImage" class="absolute left-4 text-white text-4xl font-bold focus:outline-none" aria-label="Previous image">&#10094;</button>
-        <button id="nextImage" class="absolute right-4 text-white text-4xl font-bold focus:outline-none" aria-label="Next image">&#10095;</button>
+    <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-80 hidden flex items-center justify-center z-50">
+        <button id="closeLightbox" class="absolute top-4 right-4 text-white text-4xl font-bold focus:outline-none"
+            aria-label="Close lightbox">&times;</button>
+        <button id="prevImage" class="absolute left-4 text-white text-4xl font-bold focus:outline-none"
+            aria-label="Previous image">&#10094;</button>
+        <div class="flex flex-col items-center">
+            <img id="lightboxImage" src="" alt="Lightbox image"
+                class="max-w-[90vw] max-h-[80vh] rounded-lg transition duration-300 ease-in-out">
+            <p id="lightboxCaption" class="text-gray-300 mt-2 text-sm"></p>
+        </div>
+        <button id="nextImage" class="absolute right-4 text-white text-4xl font-bold focus:outline-none"
+            aria-label="Next image">&#10095;</button>
     </div>
 
+    <!-- Footer -->
     <footer class="bg-gray-800 text-white py-8">
         <div class="container mx-auto px-6">
             <div class="text-center text-gray-400">
@@ -78,7 +121,83 @@
         </div>
     </footer>
 
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/gallery.js"></script>
+    <script>
+    // Albums (group images by date)
+    const albums = {
+        "2023-10-20": [
+            "assets/images/newgallery/0ad3f30f-b7ae-4a57-bc89-27c2a8abdd03.jpg",
+            "assets/images/newgallery/2bebf7f6-5ee0-4560-9271-266672461497.jpg",
+            "assets/images/newgallery/2fdefb69-d571-4fb7-b564-06b1b9f3889e.jpg"
+        ],
+        "2023-10-21": [
+            "assets/images/newgallery/4a36f480-2a21-45e8-8d79-9f8c0a9d072a.jpg",
+            "assets/images/newgallery/4b1a7477-c02b-42ec-bb3d-d47e876733c1.jpg",
+            "assets/images/newgallery/4d8a6e7e-054b-4beb-807c-915477ee6a0c.jpg"
+        ],
+        "2023-10-22": [
+            "assets/images/newgallery/6e6d3e42-2b23-4aca-87e5-516527eb0393.jpg",
+            "assets/images/newgallery/7d6d8c7e-b0e2-4a8e-bb43-111111111111.jpg",
+            "assets/images/newgallery/8e9f8c7e-2222-4a8e-aaaa-222222222222.jpg"
+        ]
+    };
+
+    let currentImages = [];
+    let currentIndex = 0;
+
+    // Open album when clicked
+    document.querySelectorAll(".album-card").forEach(card => {
+        card.addEventListener("click", () => {
+            const date = card.getAttribute("data-album");
+            if (albums[date]) {
+                openLightbox(albums[date]);
+            }
+        });
+    });
+
+    function openLightbox(images) {
+        currentImages = images;
+        currentIndex = 0;
+        showImage();
+        document.getElementById("lightbox").classList.remove("hidden");
+    }
+
+    function showImage() {
+    const img = document.getElementById("lightboxImage");
+    const caption = document.getElementById("lightboxCaption");
+
+    // Remove active class before changing image
+    img.classList.remove("fade-enter-active");
+    void img.offsetWidth; // Force reflow (restart animation)
+
+    // Change image
+    img.src = currentImages[currentIndex];
+    caption.innerText = `${currentIndex + 1} of ${currentImages.length}`;
+
+    // Trigger animation
+    img.classList.add("fade-enter");
+    setTimeout(() => {
+        img.classList.add("fade-enter-active");
+        img.classList.remove("fade-enter");
+    }, 10);
+}
+
+
+    // Navigation
+    document.getElementById("nextImage").addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % currentImages.length;
+        showImage();
+    });
+
+    document.getElementById("prevImage").addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+        showImage();
+    });
+
+    document.getElementById("closeLightbox").addEventListener("click", () => {
+        document.getElementById("lightbox").classList.add("hidden");
+    });
+</script>
+
 </body>
+
 </html>

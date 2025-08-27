@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const vCard = `BEGIN:VCARD
 VERSION:3.0
 FN:${name}
-ORG:Siddha Durga Puja
+ORG:Lakeville Durga Puja
 TITLE:${role}
 EMAIL:${email}
 END:VCARD`;
