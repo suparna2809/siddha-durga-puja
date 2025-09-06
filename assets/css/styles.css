@@ -63,3 +63,17 @@ header a:hover {
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
+@keyframes marquee {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .animate-marquee {
+      display: flex;
+      animation: marquee 20s linear infinite;
+    }
+
