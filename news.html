@@ -2,78 +2,195 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
-    <title>News - Lakeville Durga Puja</title>
-    <meta name="description" content="Latest news and updates from the Lakeville Durga Puja committee.">
-    <link rel="canonical" href="https://example.com/news.html">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <title>News - Siddha Durga Puja</title>
+  <meta name="description" content="Latest news and updates about the Siddha Durga Puja celebrations.">
+  <link rel="canonical" href="https://example.com/news.html">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body class="bg-light text-gray-800 font-sans"
-    style="background-image: url('assets/images/back-ground3.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat; background-attachment: fixed;">
+  style="background-image: url('assets/images/back-ground3.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat; background-attachment: fixed;">
 
-    <header class="bg-white shadow-md sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="index.html" class="flex items-center">
-                <img src="assets/images/logo.jpg" alt="Lakeville Durga Puja Logo" class="h-10 w-auto mr-2">
-            </a>
-            <div class="hidden md:flex space-x-6 items-center">
-                <a href="index.html" class="text-gray-800 hover:text-brand">Home</a>
-                <a href="about.html" class="text-gray-800 hover:text-brand">About Us</a>
-                <a href="cultural-events.html" class="text-gray-800 hover:text-brand">Cultural Events</a>
-                <a href="sponsorship.html" class="text-gray-800 hover:text-brand">Sponsorship</a>
-                <a href="members.html" class="text-gray-800 hover:text-brand">Members</a>
-                <a href="gallery.html" class="text-gray-800 hover:text-brand">Gallery</a>
-                <a href="news.html" class="text-brand">News</a>
-                <a href="contact.html" class="text-gray-800 hover:text-brand">Contact</a>
-            </div>
-            <a href="subscription.html"
-                class="hidden md:block bg-brand text-white px-4 py-2 rounded-full hover:bg-brand-dark">Subscribe</a>
-            <div class="md:hidden">
-                <button id="hamburger" class="text-gray-800 focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
-            </div>
-        </nav>
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
-            <a href="index.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Home</a>
-            <a href="about.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">About Us</a>
-            <a href="cultural-events.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Cultural
-                Events</a>
-            <a href="members.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Members</a>
-            <a href="gallery.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Gallery</a>
-            <a href="news.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">News</a>
-            <a href="contact.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Contact</a>
-            <a href="subscription.html"
-                class="block px-4 py-2 text-sm bg-brand text-white text-center rounded-md m-2">Subscribe</a>
-        </div>
-    </header>
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="index.html" class="flex items-center">
+        <img src="assets/images/logo.jpg" alt="Siddha Durga Puja Logo" class="h-10 w-auto mr-2">
+      </a>
+      <div class="hidden md:flex space-x-6 items-center">
+        <a href="index.html" class="text-gray-800 hover:text-brand">Home</a>
+        <a href="about.html" class="text-gray-800 hover:text-red-600">About Us</a>
+        <a href="cultural-events.html" class="text-gray-800 hover:text-brand">Cultural Events</a>
+        <a href="sponsorship.html" class="text-gray-800 hover:text-brand">Sponsorship</a>
+        <a href="members.html" class="text-gray-800 hover:text-brand">Members</a>
+        <a href="gallery.html" class="text-gray-800 hover:text-brand">Gallery</a>
+        <a href="news.html" class="text-brand">News</a>
+        <a href="contact.html" class="text-gray-800 hover:text-brand">Contact</a>
+      </div>
+      <a href="subscription.html"
+        class="hidden md:block bg-brand text-white px-4 py-2 rounded-full hover:bg-brand-dark">Subscribe</a>
+      <div class="md:hidden">
+        <button id="hamburger" class="text-gray-800 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+      <a href="index.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Home</a>
+      <a href="about.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">About Us</a>
+      <a href="cultural-events.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Cultural Events</a>
+      <a href="members.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Members</a>
+      <a href="gallery.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Gallery</a>
+      <a href="news.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">News</a>
+      <a href="contact.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Contact</a>
+      <a href="subscription.html"
+        class="block px-4 py-2 text-sm bg-brand text-white text-center rounded-md m-2">Subscribe</a>
+    </div>
+  </header>
 
-    <main class="container mx-auto px-6 py-12">
-        <h1 class="text-4xl font-bold text-center mb-12 text-brand">News Feed</h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-           
-        </div>
-    </main>
+  <!-- Main Gallery Albums -->
+  <main class="container mx-auto px-6 py-12">
+    <h1 class="text-4xl font-bold text-center mb-12 text-brand">News</h1>
 
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="container mx-auto px-6">
-            <div class="text-center text-gray-400">
-                &copy; 2025 Lakeville Durga Puja. All Rights Reserved.
-            </div>
-        </div>
-    </footer>
+    <div id="albumGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
-    <script src="assets/js/main.js"></script>
+      <!-- Albums -->
+      <div data-album="award1"
+        class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
+        <img src="assets/images/award/award1.jpg" alt="award1" class="w-full h-56 object-cover">     
+      </div>
+
+      <div data-album="award2"
+        class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
+        <img src="assets/images/award/award2.jpg" alt="award2" class="w-full h-56 object-cover">
+      </div>
+    </div>
+  </main>
+
+  <!-- Lightbox -->
+<div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center hidden z-50">
+  <button id="closeLightbox" class="absolute top-4 right-6 text-white text-3xl">&times;</button>
+
+  <!-- Image -->
+  <img id="lightboxImage" src="" alt="lightbox image" class="max-h-[80vh] max-w-[90vw] hidden transition-opacity duration-500">
+
+  <!-- Video -->
+  <video id="lightboxVideo" class="max-h-[80vh] max-w-[90vw] hidden" controls>
+    <source src="" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Caption -->
+  <div id="lightboxCaption" class="absolute bottom-6 text-white text-lg"></div>
+
+  <!-- Navigation -->
+  <button id="prevImage" class="absolute left-6 text-white text-4xl">&#10094;</button>
+  <button id="nextImage" class="absolute right-6 text-white text-4xl">&#10095;</button>
+</div>
+
+
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-6">
+      <div class="text-center text-gray-400">
+        &copy; 2025 Siddha Durga Puja. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Albums (group images + videos by date)
+    const albums = {
+      "award1": [
+        "assets/images/award/award1.jpg",
+      ],
+      "award2": [
+        "assets/images/award/award2.jpg",
+      ]
+    };
+
+    let currentImages = [];
+    let currentIndex = 0;
+
+    // Open album when clicked
+    document.querySelectorAll(".album-card").forEach(card => {
+      card.addEventListener("click", () => {
+        const date = card.getAttribute("data-album");
+        if (albums[date]) {
+          openLightbox(albums[date]);
+        }
+      });
+    });
+
+    function openLightbox(images) {
+      currentImages = images;
+      currentIndex = 0;
+      showMedia();
+      document.getElementById("lightbox").classList.remove("hidden");
+    }
+
+    function showMedia() {
+      const img = document.getElementById("lightboxImage");
+      const video = document.getElementById("lightboxVideo");
+      const source = video.querySelector("source");
+      const caption = document.getElementById("lightboxCaption");
+
+      const currentFile = currentImages[currentIndex];
+      const isVideo = currentFile.endsWith(".mp4");
+
+      // Hide both first
+      img.classList.add("hidden");
+      video.classList.add("hidden");
+      video.pause();
+
+      if (isVideo) {
+        source.src = currentFile;
+        video.load();
+        video.classList.remove("hidden");
+      } else {
+        img.classList.remove("fade-enter-active");
+        void img.offsetWidth; // restart animation
+        img.src = currentFile;
+        img.classList.remove("hidden");
+
+        img.classList.add("fade-enter");
+        setTimeout(() => {
+          img.classList.add("fade-enter-active");
+          img.classList.remove("fade-enter");
+        }, 10);
+      }
+
+      caption.innerText = `${currentIndex + 1} of ${currentImages.length}`;
+    }
+
+    // Navigation
+    document.getElementById("nextImage").addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % currentImages.length;
+      showMedia();
+    });
+
+    document.getElementById("prevImage").addEventListener("click", () => {
+      currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+      showMedia();
+    });
+
+    document.getElementById("closeLightbox").addEventListener("click", () => {
+      document.getElementById("lightbox").classList.add("hidden");
+      document.getElementById("lightboxVideo").pause();
+    });
+  </script>
+
 </body>
-
 </html>

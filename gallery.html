@@ -2,222 +2,257 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
-    <title>Gallery Albums - Siddha Durga Puja</title>
-    <meta name="description" content="Photo gallery albums of the Siddha Durga Puja celebrations.">
-    <link rel="canonical" href="https://example.com/gallery.html">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Gallery Albums - Siddha Durga Puja</title>
+  <meta name="description" content="Photo gallery albums of the Siddha Durga Puja celebrations.">
+  <link rel="canonical" href="https://example.com/gallery.html">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body class="bg-light text-gray-800 font-sans"
-    style="background-image: url('assets/images/back-ground3.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat; background-attachment: fixed;">
+  style="background-image: url('assets/images/back-ground3.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat; background-attachment: fixed;">
 
-    <!-- Header -->
-    <header class="bg-white shadow-md sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="index.html" class="flex items-center">
-                <img src="assets/images/logo.jpg" alt="Siddha Durga Puja Logo" class="h-10 w-auto mr-2">
-            </a>
-            <div class="hidden md:flex space-x-6 items-center">
-                <a href="index.html" class="text-gray-800 hover:text-brand">Home</a>
-                <a href="about.html" class="text-gray-800 hover:text-red-600">About Us</a>
-                <a href="cultural-events.html" class="text-gray-800 hover:text-brand">Cultural Events</a>
-                <a href="sponsorship.html" class="text-gray-800 hover:text-brand">Sponsorship</a>
-                <a href="members.html" class="text-gray-800 hover:text-brand">Members</a>
-                <a href="gallery.html" class="text-brand">Gallery</a>
-                <a href="news.html" class="text-gray-800 hover:text-brand">News</a>
-                <a href="contact.html" class="text-gray-800 hover:text-brand">Contact</a>
-            </div>
-            <a href="subscription.html"
-                class="hidden md:block bg-brand text-white px-4 py-2 rounded-full hover:bg-brand-dark">Subscribe</a>
-            <div class="md:hidden">
-                <button id="hamburger" class="text-gray-800 focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
-            </div>
-        </nav>
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
-            <a href="index.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Home</a>
-            <a href="about.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">About Us</a>
-            <a href="cultural-events.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Cultural
-                Events</a>
-            <a href="members.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Members</a>
-            <a href="gallery.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Gallery</a>
-            <a href="news.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">News</a>
-            <a href="contact.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Contact</a>
-            <a href="subscription.html"
-                class="block px-4 py-2 text-sm bg-brand text-white text-center rounded-md m-2">Subscribe</a>
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="index.html" class="flex items-center">
+        <img src="assets/images/logo.jpg" alt="Siddha Durga Puja Logo" class="h-10 w-auto mr-2">
+      </a>
+      <div class="hidden md:flex space-x-6 items-center">
+        <a href="index.html" class="text-gray-800 hover:text-brand">Home</a>
+        <a href="about.html" class="text-gray-800 hover:text-red-600">About Us</a>
+        <a href="cultural-events.html" class="text-gray-800 hover:text-brand">Cultural Events</a>
+        <a href="sponsorship.html" class="text-gray-800 hover:text-brand">Sponsorship</a>
+        <a href="members.html" class="text-gray-800 hover:text-brand">Members</a>
+        <a href="gallery.html" class="text-brand">Gallery</a>
+        <a href="news.html" class="text-gray-800 hover:text-brand">News</a>
+        <a href="contact.html" class="text-gray-800 hover:text-brand">Contact</a>
+      </div>
+      <a href="subscription.html"
+        class="hidden md:block bg-brand text-white px-4 py-2 rounded-full hover:bg-brand-dark">Subscribe</a>
+      <div class="md:hidden">
+        <button id="hamburger" class="text-gray-800 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+      <a href="index.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Home</a>
+      <a href="about.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">About Us</a>
+      <a href="cultural-events.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Cultural Events</a>
+      <a href="members.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Members</a>
+      <a href="gallery.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Gallery</a>
+      <a href="news.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">News</a>
+      <a href="contact.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Contact</a>
+      <a href="subscription.html"
+        class="block px-4 py-2 text-sm bg-brand text-white text-center rounded-md m-2">Subscribe</a>
+    </div>
+  </header>
+
+  <!-- Main Gallery Albums -->
+  <main class="container mx-auto px-6 py-12">
+    <h1 class="text-4xl font-bold text-center mb-12 text-brand">Gallery Albums</h1>
+
+    <div id="albumGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+      <!-- Albums -->
+      <div data-album="2021"
+        class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
+        <img src="assets/images/pujo21/img1.jpg" alt="Album 2021" class="w-full h-56 object-cover">
+        <div class="p-4 text-center">
+          <h2 class="text-lg font-semibold text-brand">2021</h2>
+          <p class="text-sm text-gray-500">View Album</p>
         </div>
-    </header>
+      </div>
 
-    <!-- Main Gallery Albums -->
-    <main class="container mx-auto px-6 py-12">
-        <h1 class="text-4xl font-bold text-center mb-12 text-brand">Gallery Albums</h1>
-
-        <div id="albumGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-
-            <!-- Album Card Example -->
-            <div data-album="2021"
-                class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
-                <img src="assets/images/pujo21/img1.jpg" alt="Album 2021"
-                    class="w-full h-56 object-cover">
-                <div class="p-4 text-center">
-                    <h2 class="text-lg font-semibold text-brand">2021</h2>
-                    <p class="text-sm text-gray-500">View Album</p>
-                </div>
-            </div>
-
-            <div data-album="2022"
-                class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
-                <img src="assets/images/pujo22/img1.jpg" alt="Album 2022"
-                    class="w-full h-56 object-cover">
-                <div class="p-4 text-center">
-                    <h2 class="text-lg font-semibold text-brand">2022</h2>
-                    <p class="text-sm text-gray-500">View Album</p>
-                </div>
-            </div>
-
-            <div data-album="2023"
-                class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
-                <img src="assets/images/pujo23/img1.jpg" alt="Album 2023"
-                    class="w-full h-56 object-cover">
-                <div class="p-4 text-center">
-                    <h2 class="text-lg font-semibold text-brand">2023</h2>
-                    <p class="text-sm text-gray-500">View Album</p>
-                </div>
-            </div>
-
-            <div data-album="2024"
-                class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
-                <img src="assets/images/pujo24/img1.jpg" alt="Album 2024"
-                    class="w-full h-56 object-cover">
-                <div class="p-4 text-center">
-                    <h2 class="text-lg font-semibold text-brand">2024</h2>
-                    <p class="text-sm text-gray-500">View Album</p>
-                </div>
-            </div>
-
+      <div data-album="2022"
+        class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
+        <img src="assets/images/pujo22/img1.jpg" alt="Album 2022" class="w-full h-56 object-cover">
+        <div class="p-4 text-center">
+          <h2 class="text-lg font-semibold text-brand">2022</h2>
+          <p class="text-sm text-gray-500">View Album</p>
         </div>
-    </main>
+      </div>
 
-    <!-- Lightbox Modal -->
-    <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-80 hidden flex items-center justify-center z-50">
-        <button id="closeLightbox" class="absolute top-4 right-4 text-white text-4xl font-bold focus:outline-none"
-            aria-label="Close lightbox">&times;</button>
-        <button id="prevImage" class="absolute left-4 text-white text-4xl font-bold focus:outline-none"
-            aria-label="Previous image">&#10094;</button>
-        <div class="flex flex-col items-center">
-            <img id="lightboxImage" src="" alt="Lightbox image"
-                class="max-w-[90vw] max-h-[80vh] rounded-lg transition duration-300 ease-in-out">
-            <p id="lightboxCaption" class="text-gray-300 mt-2 text-sm"></p>
+      <div data-album="2023"
+        class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
+        <img src="assets/images/pujo23/img1.jpg" alt="Album 2023" class="w-full h-56 object-cover">
+        <div class="p-4 text-center">
+          <h2 class="text-lg font-semibold text-brand">2023</h2>
+          <p class="text-sm text-gray-500">View Album</p>
         </div>
-        <button id="nextImage" class="absolute right-4 text-white text-4xl font-bold focus:outline-none"
-            aria-label="Next image">&#10095;</button>
+      </div>
+
+      <div data-album="2024"
+        class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
+        <img src="assets/images/pujo24/img1.jpg" alt="Album 2024" class="w-full h-56 object-cover">
+        <div class="p-4 text-center">
+          <h2 class="text-lg font-semibold text-brand">2024</h2>
+          <p class="text-sm text-gray-500">View Album</p>
+        </div>
+      </div>
+
+      <div data-album="Independence"
+        class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
+        <img src="assets/images/independenceday/img1.jpg" alt="Album Independence" class="w-full h-56 object-cover">
+        <div class="p-4 text-center">
+          <h2 class="text-lg font-semibold text-brand">Independence</h2>
+          <p class="text-sm text-gray-500">View Album</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-80 hidden flex items-center justify-center z-50">
+    <button id="closeLightbox" class="absolute top-4 right-4 text-white text-4xl font-bold focus:outline-none"
+      aria-label="Close lightbox">&times;</button>
+    <button id="prevImage" class="absolute left-4 text-white text-4xl font-bold focus:outline-none"
+      aria-label="Previous image">&#10094;</button>
+
+    <div class="flex flex-col items-center">
+      <img id="lightboxImage" src="" alt="Lightbox image"
+        class="max-w-[90vw] max-h-[80vh] rounded-lg transition duration-300 ease-in-out hidden">
+      <video id="lightboxVideo" controls
+        class="max-w-[90vw] max-h-[80vh] rounded-lg hidden">
+        <source src="" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p id="lightboxCaption" class="text-gray-300 mt-2 text-sm"></p>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="container mx-auto px-6">
-            <div class="text-center text-gray-400">
-                &copy; 2025 Siddha Durga Puja. All Rights Reserved.
-            </div>
-        </div>
-    </footer>
+    <button id="nextImage" class="absolute right-4 text-white text-4xl font-bold focus:outline-none"
+      aria-label="Next image">&#10095;</button>
+  </div>
 
-    <script>
-        // Albums (group images by date)
-        const albums = {
-            "2021": [
-                "assets/images/pujo21/img1.jpg",
-                "assets/images/pujo21/img2.jpg",
-                "assets/images/pujo21/img3.jpg"
-            ],
-            "2022": [
-                "assets/images/pujo22/img1.jpg",
-                "assets/images/pujo22/img2.jpg",
-                "assets/images/pujo22/img3.jpg"
-            ],
-            "2023": [
-                "assets/images/pujo23/img1.jpg",
-                "assets/images/pujo23/img2.jpg",
-                "assets/images/pujo23/img3.jpg",
-                "assets/images/pujo23/img4.jpg"
-            ],
-            "2024": [
-                "assets/images/pujo24/img1.jpg",
-                "assets/images/pujo24/img2.jpg",
-                "assets/images/pujo24/img3.jpg",
-                "assets/images/pujo24/img4.jpg",
-                "assets/images/pujo24/img5.jpg"
-            ]
-        };
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-6">
+      <div class="text-center text-gray-400">
+        &copy; 2025 Siddha Durga Puja. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
 
-        let currentImages = [];
-        let currentIndex = 0;
+  <script>
+    // Albums (group images + videos by date)
+    const albums = {
+      "2021": [
+        "assets/images/pujo21/img1.jpg",
+        "assets/images/pujo21/img2.jpg",
+        "assets/images/pujo21/img3.jpg"
+      ],
+      "2022": [
+        "assets/images/pujo22/img1.jpg",
+        "assets/images/pujo22/img2.jpg",
+        "assets/images/pujo22/img3.jpg"
+      ],
+      "2023": [
+        "assets/images/pujo23/img1.jpg",
+        "assets/images/pujo23/img2.jpg",
+        "assets/images/pujo23/img3.jpg",
+        "assets/images/pujo23/img4.jpg"
+      ],
+      "2024": [
+        "assets/images/pujo24/img1.jpg",
+        "assets/images/pujo24/img2.jpg",
+        "assets/images/pujo24/img3.jpg",
+        "assets/images/pujo24/img4.jpg",
+        "assets/images/pujo24/img5.jpg"
+      ],
+      "Independence": [
+        "assets/images/independenceday/img1.jpg",
+        "assets/images/independenceday/img2.jpg",
+        "assets/images/independenceday/img3.jpg",
+        "assets/images/independenceday/img4.jpg",
+        "assets/images/independenceday/img5.jpg",
+        "assets/images/independenceday/img6.jpg",
+        "assets/images/independenceday/img7.jpg",
+        "assets/images/independenceday/video1.mp4",
+        "assets/images/independenceday/video2.mp4"
+      ]
+    };
 
-        // Open album when clicked
-        document.querySelectorAll(".album-card").forEach(card => {
-            card.addEventListener("click", () => {
-                const date = card.getAttribute("data-album");
-                if (albums[date]) {
-                    openLightbox(albums[date]);
-                }
-            });
-        });
+    let currentImages = [];
+    let currentIndex = 0;
 
-        function openLightbox(images) {
-            currentImages = images;
-            currentIndex = 0;
-            showImage();
-            document.getElementById("lightbox").classList.remove("hidden");
+    // Open album when clicked
+    document.querySelectorAll(".album-card").forEach(card => {
+      card.addEventListener("click", () => {
+        const date = card.getAttribute("data-album");
+        if (albums[date]) {
+          openLightbox(albums[date]);
         }
+      });
+    });
 
-        function showImage() {
-            const img = document.getElementById("lightboxImage");
-            const caption = document.getElementById("lightboxCaption");
+    function openLightbox(images) {
+      currentImages = images;
+      currentIndex = 0;
+      showMedia();
+      document.getElementById("lightbox").classList.remove("hidden");
+    }
 
-            // Remove active class before changing image
-            img.classList.remove("fade-enter-active");
-            void img.offsetWidth; // Force reflow (restart animation)
+    function showMedia() {
+      const img = document.getElementById("lightboxImage");
+      const video = document.getElementById("lightboxVideo");
+      const source = video.querySelector("source");
+      const caption = document.getElementById("lightboxCaption");
 
-            // Change image
-            img.src = currentImages[currentIndex];
-            caption.innerText = `${currentIndex + 1} of ${currentImages.length}`;
+      const currentFile = currentImages[currentIndex];
+      const isVideo = currentFile.endsWith(".mp4");
 
-            // Trigger animation
-            img.classList.add("fade-enter");
-            setTimeout(() => {
-                img.classList.add("fade-enter-active");
-                img.classList.remove("fade-enter");
-            }, 10);
-        }
+      // Hide both first
+      img.classList.add("hidden");
+      video.classList.add("hidden");
+      video.pause();
 
+      if (isVideo) {
+        source.src = currentFile;
+        video.load();
+        video.classList.remove("hidden");
+      } else {
+        img.classList.remove("fade-enter-active");
+        void img.offsetWidth; // restart animation
+        img.src = currentFile;
+        img.classList.remove("hidden");
 
-        // Navigation
-        document.getElementById("nextImage").addEventListener("click", () => {
-            currentIndex = (currentIndex + 1) % currentImages.length;
-            showImage();
-        });
+        img.classList.add("fade-enter");
+        setTimeout(() => {
+          img.classList.add("fade-enter-active");
+          img.classList.remove("fade-enter");
+        }, 10);
+      }
 
-        document.getElementById("prevImage").addEventListener("click", () => {
-            currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
-            showImage();
-        });
+      caption.innerText = `${currentIndex + 1} of ${currentImages.length}`;
+    }
 
-        document.getElementById("closeLightbox").addEventListener("click", () => {
-            document.getElementById("lightbox").classList.add("hidden");
-        });
-    </script>
+    // Navigation
+    document.getElementById("nextImage").addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % currentImages.length;
+      showMedia();
+    });
+
+    document.getElementById("prevImage").addEventListener("click", () => {
+      currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+      showMedia();
+    });
+
+    document.getElementById("closeLightbox").addEventListener("click", () => {
+      document.getElementById("lightbox").classList.add("hidden");
+      document.getElementById("lightboxVideo").pause();
+    });
+  </script>
 
 </body>
-
 </html>

@@ -11,7 +11,7 @@
     <meta name="description" content="Official website for the Lakeville Durga Puja committee.">
     <link rel="canonical" href="https://example.com/index.html">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/styles.css?v=1.0.3">
+    <link rel="stylesheet" href="assets/css/styles.css?v=1.0.3">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
     <link rel="stylesheet" type="text/css"
@@ -21,15 +21,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:wght@300;400;600;700&display=swap"
         rel="stylesheet">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Lakeville Durga Puja",
-      "url": "https://example.com",
-      "logo": "https://example.com/assets/images/logo.png"
-    }
-    </script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 </head>
 
 <body class="bg-light text-gray-800 font-sans"
@@ -84,6 +78,11 @@
 
             </div>
             <div>
+                <img src="assets/images/independenceday/img4.jpg" alt="Cultural dance performance"
+                    class="w-full h-96 object-cover" />
+
+            </div>
+            <div>
                 <img src="assets/images/cultural2.jpeg?q=80&w=1932&auto=format&fit=crop" alt="Band performance"
                     class="w-full h-96 object-cover object-top" />
 
@@ -106,9 +105,64 @@
         <!-- Call to Action -->
         <section class="container mx-auto px-6 py-12 text-center">
             <h2 class="text-3xl font-bold mb-4 text-brand">Children Drama</h2>
-            <a href="children-drama.html"
+            <a href="assets/images/children-drama.jpg" target="_blank"
                 class="bg-brand text-white px-8 py-3 rounded-full hover:bg-brand-dark text-lg">Creative</a>
         </section>
+
+        <section class="bg-white py-12">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-8 text-brand">Independence Day Celebration</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 home-news-feed">
+                    <!-- News items will be loaded here from news.json -->
+                </div>
+                <div class="text-center mt-8">
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        <a href="assets/images/independenceday/img1.jpg" data-lightbox="independence"
+                            data-title="Flag Hoisting">
+                            <img src="assets/images/independenceday/img1.jpg" alt="Flag Hoisting"
+                                class="rounded shadow hover:opacity-80 transition w-full h-48 object-cover" />
+                        </a>
+                        <a href="assets/images/independenceday/img2.jpg" data-lightbox="independence"
+                            data-title="Cultural Dance">
+                            <img src="assets/images/independenceday/img2.jpg" alt="Cultural Dance"
+                                class="rounded shadow hover:opacity-80 transition w-full h-48 object-cover" />
+                        </a>
+                        <a href="assets/images/independenceday/img3.jpg" data-lightbox="independence"
+                            data-title="Children Singing">
+                            <img src="assets/images/independenceday/img3.jpg" alt="Children Singing"
+                                class="rounded shadow hover:opacity-80 transition w-full h-48 object-cover" />
+                        </a>
+                        <a href="assets/images/independenceday/img4.jpg" data-lightbox="independence"
+                            data-title="Children Singing">
+                            <img src="assets/images/independenceday/img4.jpg" alt="Children Singing"
+                                class="rounded shadow hover:opacity-80 transition w-full h-48 object-cover" />
+                        </a>
+                        <a href="assets/images/independenceday/video1.mp4" data-lightbox="independence"
+                            data-title="Children Singing">
+                            <video src="assets/images/independenceday/video1.mp4" alt="Children Singing"
+                                class="rounded shadow hover:opacity-80 transition w-full h-48 object-cover"
+                                controls></video>
+                        </a>
+                        <a href="assets/images/independenceday/video2.mp4" data-lightbox="independence"
+                            data-title="Children Singing">
+                            <video src="assets/images/independenceday/video2.mp4" alt="Children Singing"
+                                class="rounded shadow hover:opacity-80 transition w-full h-48 object-cover"
+                                controls></video>
+                        </a>
+                    </div>
+                    <!-- Lightbox2 CSS & JS -->
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="container mx-auto px-6 py-12 text-center">
+            <h2 class="text-3xl font-bold mb-4 text-brand">Schedule Of Cultural Events 2025</h2>
+            <a href="assets/images/children-drama.jpg" target="_blank"
+                class="bg-brand text-white px-8 py-3 rounded-full hover:bg-brand-dark text-lg">click here</a>
+        </section>
+
     </main>
 
     <footer class="bg-gray-800 text-white py-8">
@@ -151,7 +205,7 @@
         </div>
     </footer>
 
-<script src="assets/js/main.js?v=1.0.3"></script>
+    <script src="assets/js/main.js?v=1.0.3"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
