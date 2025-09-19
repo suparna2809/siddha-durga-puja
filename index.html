@@ -30,13 +30,37 @@
       "logo": "https://example.com/assets/images/logo.png"
     }
     </script>
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <style>
+    /* Add horizontal gap between slick slides */
+    .adv-slider .slick-slide {
+      margin-right: 1.5rem;
+    }
+
+    .adv-slider .slick-slide:last-child {
+      margin-right: 0;
+    }
+  </style>
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 </head>
 
 <body class="bg-light text-gray-800 font-sans"
   style="background-image: url('assets/images/back-ground3.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat; background-attachment: fixed;">
 
-  <header class="bg-white shadow-md sticky top-0 z-50">
+  <!-- 🔹 Video Modal (autoplay teaser) -->
+  <div id="videoModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden">
+    <div class="relative w-11/12 md:w-3/4 lg:w-1/2 bg-black rounded-lg shadow-lg">
+      <!-- Close Button -->
+      <button id="closeModal" class="absolute top-2 right-2 text-white text-2xl font-bold">&times;</button>
+
+      <!-- Video -->
+      <video id="teaserVideo" class="w-full rounded-lg" autoplay controls>
+        <source src="assets/images/teaser/teaser1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <header class="bg-white shadow-md sticky top-0 z-40">
     <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
       <a href="index.html" class="flex items-center">
         <img src="assets/images/logo.jpg" alt="Lakeville Durga Puja Logo" class="h-10 w-auto mr-2">
@@ -55,8 +79,10 @@
         class="hidden md:block bg-brand text-white px-4 py-2 rounded-full hover:bg-brand-dark">Subscribe</a>
       <div class="md:hidden">
         <button id="hamburger" class="text-gray-800 focus:outline-none">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"></path>
           </svg>
         </button>
       </div>
@@ -113,6 +139,38 @@
       </div>
     </section>
 
+    <!-- Video Teaser Section -->
+    <section class="bg-blue-100 py-12">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-8 text-brand">Video Teasers</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Video 1 -->
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <div class="aspect-w-16 aspect-h-9">
+              <video class="w-full h-64 md:h-48 lg:h-56" src="assets/images/teaser/teaser1.mp4" controls
+                title="Video teaser 1"></video>
+            </div>
+          </div>
+
+          <!-- Video 2 -->
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <div class="aspect-w-16 aspect-h-9">
+              <video class="w-full h-64 md:h-48 lg:h-56" src="assets/images/teaser/teaser2.mp4" controls
+                title="Video teaser 2"></video>
+            </div>
+          </div>
+
+          <!-- Video 3 -->
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <div class="aspect-w-16 aspect-h-9">
+              <video class="w-full h-64 md:h-48 lg:h-56" src="assets/images/teaser/teaser3.mp4" controls
+                title="Video teaser 3"></video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Feature Cards -->
     <section class="container mx-auto px-6 py-12">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -145,9 +203,50 @@
     <section class="container mx-auto px-6 py-12 text-center">
       <h2 class="text-3xl font-bold mb-4 text-brand">Enjoy Community Lunch</h2>
       <p class="mb-8">Join us for a delightful community lunch experience.</p>
-      <a href="assets/images/CombinedMenuCard.pdf" target="_blank" class="bg-brand text-white px-8 py-3 rounded-full hover:bg-brand-dark text-lg">Get
+      <a href="assets/images/CombinedMenuCard.pdf" target="_blank"
+        class="bg-brand text-white px-8 py-3 rounded-full hover:bg-brand-dark text-lg">Get
         Coupon</a>
     </section>
+
+    <!-- Advertisement Slider -->
+    <section class="bg-white py-12">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-8 text-brand">Advertisements</h2>
+        <div class="adv-slider space-x-6">
+          <div
+            class="mx-auto rounded-lg shadow-md bg-gray-100 min-h-96 flex items-center justify-center text-center"
+            style="min-height: 10rem;">
+            <span>Your advertisement will be displayed here...</span>
+          </div>
+          <div
+            class="mx-auto rounded-lg shadow-md bg-gray-100 min-h-96 flex items-center justify-center text-center"
+            style="min-height: 10rem;">
+            <span>Your advertisement will be displayed here...</span>
+          </div>
+          <div
+            class="mx-auto rounded-lg shadow-md bg-gray-100 min-h-96 flex items-center justify-center text-center"
+            style="min-height: 10rem;">
+            <span>Your advertisement will be displayed here...</span>
+          </div>
+          <div
+            class="mx-auto rounded-lg shadow-md bg-gray-100 min-h-96 flex items-center justify-center text-center"
+            style="min-height: 10rem;">
+            <span>Your advertisement will be displayed here...</span>
+          </div>
+          <div
+            class="mx-auto rounded-lg shadow-md bg-gray-100 min-h-96 flex items-center justify-center text-center"
+            style="min-height: 10rem;">
+            <span>Your advertisement will be displayed here...</span>
+          </div>
+          <div
+            class="mx-auto rounded-lg shadow-md bg-gray-100 min-h-96 flex items-center justify-center text-center"
+            style="min-height: 10rem;">
+            <span>Your advertisement will be displayed here...</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="bg-gray-800 text-white py-8">
@@ -164,17 +263,8 @@
             <li><a href="contact.html" class="hover:underline">Contact</a></li>
           </ul>
         </div>
-        <div>
-          <!-- <h3 class="font-bold mb-2 text-accent">Legal</h3>
-          <ul>
-            <li><a href="#" class="hover:underline">Privacy Policy</a></li>
-            <li><a href="#" class="hover:underline">Terms of Service</a></li>
-            <li><a href="#" class="hover:underline">Accessibility Statement</a></li>
-          </ul> -->
-        </div>
-        <div>
-          <!-- <h3 class="font-bold mb-2 text-accent">Connect</h3> -->
-        </div>
+        <div></div>
+        <div></div>
         <div>
           <h3 class="font-bold mb-2 text-accent">Souvenirs</h3>
           <form>
@@ -213,10 +303,40 @@
         dots: false,
         infinite: true,
         speed: 600,
-        slidesToShow: 1,
+        slidesToShow: 3,
+        slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2500,
-        arrows: false
+        arrows: true,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: { slidesToShow: 2 }
+          },
+          {
+            breakpoint: 640,
+            settings: { slidesToShow: 1 }
+          }
+        ]
+      });
+
+      // 🔹 Video Modal Logic
+      const modal = document.getElementById("videoModal");
+      const video = document.getElementById("teaserVideo");
+      const closeModal = document.getElementById("closeModal");
+
+      // Show modal on page load
+      $("#videoModal").removeClass("hidden");
+
+      // Close modal when clicking X
+      closeModal.addEventListener("click", function () {
+        modal.classList.add("hidden");
+        video.pause();
+      });
+
+      // Auto close when video ends
+      video.addEventListener("ended", function () {
+        modal.classList.add("hidden");
       });
     });
   </script>
