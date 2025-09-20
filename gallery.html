@@ -37,10 +37,8 @@
         class="hidden md:block bg-brand text-white px-4 py-2 rounded-full hover:bg-brand-dark">Subscribe</a>
       <div class="md:hidden">
         <button id="hamburger" class="text-gray-800 focus:outline-none">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4 6h16M4 12h16m-7 6h7"></path>
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
           </svg>
         </button>
       </div>
@@ -65,20 +63,21 @@
     <div id="albumGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
       <!-- Albums -->
-      <div data-album="2021"
+
+      <div data-album="2025"
         class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
-        <img src="assets/images/pujo21/img1.jpg" alt="Album 2021" class="w-full h-56 object-cover">
+        <video src="assets/images/teaser/teaser1.mp4" alt="Album 2025" class="w-full h-56 object-cover" controls></video>
         <div class="p-4 text-center">
-          <h2 class="text-lg font-semibold text-brand">2021</h2>
+          <h2 class="text-lg font-semibold text-brand">2025</h2>
           <p class="text-sm text-gray-500">View Album</p>
         </div>
       </div>
 
-      <div data-album="2022"
+      <div data-album="2024"
         class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
-        <img src="assets/images/pujo22/img1.jpg" alt="Album 2022" class="w-full h-56 object-cover">
+        <img src="assets/images/pujo24/img1.jpg" alt="Album 2024" class="w-full h-56 object-cover">
         <div class="p-4 text-center">
-          <h2 class="text-lg font-semibold text-brand">2022</h2>
+          <h2 class="text-lg font-semibold text-brand">2024</h2>
           <p class="text-sm text-gray-500">View Album</p>
         </div>
       </div>
@@ -92,11 +91,20 @@
         </div>
       </div>
 
-      <div data-album="2024"
+      <div data-album="2022"
         class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
-        <img src="assets/images/pujo24/img1.jpg" alt="Album 2024" class="w-full h-56 object-cover">
+        <img src="assets/images/pujo22/img1.jpg" alt="Album 2022" class="w-full h-56 object-cover">
         <div class="p-4 text-center">
-          <h2 class="text-lg font-semibold text-brand">2024</h2>
+          <h2 class="text-lg font-semibold text-brand">2022</h2>
+          <p class="text-sm text-gray-500">View Album</p>
+        </div>
+      </div>
+
+      <div data-album="2021"
+        class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
+        <img src="assets/images/pujo21/img1.jpg" alt="Album 2021" class="w-full h-56 object-cover">
+        <div class="p-4 text-center">
+          <h2 class="text-lg font-semibold text-brand">2021</h2>
           <p class="text-sm text-gray-500">View Album</p>
         </div>
       </div>
@@ -123,8 +131,7 @@
     <div class="flex flex-col items-center">
       <img id="lightboxImage" src="" alt="Lightbox image"
         class="max-w-[90vw] max-h-[80vh] rounded-lg transition duration-300 ease-in-out hidden">
-      <video id="lightboxVideo" controls
-        class="max-w-[90vw] max-h-[80vh] rounded-lg hidden">
+      <video id="lightboxVideo" controls class="max-w-[90vw] max-h-[80vh] rounded-lg hidden">
         <source src="" type="video/mp4">
         Your browser does not support the video tag.
       </video>
@@ -169,6 +176,10 @@
         "assets/images/pujo24/img3.jpg",
         "assets/images/pujo24/img4.jpg",
         "assets/images/pujo24/img5.jpg"
+      ],
+      "2025": [
+        "assets/images/teaser/teaser2.mp4",
+        "assets/images/teaser/teaser3.mp4"
       ],
       "Independence Day": [
         "assets/images/independenceday/img1.jpg",
@@ -255,4 +266,5 @@
   </script>
 
 </body>
+
 </html>
