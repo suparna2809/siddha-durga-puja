@@ -1,7 +1,48 @@
-# Add to top of .htaccess
+# -------------------------------------------------
+# START: Enable Rewrite Engine
+# -------------------------------------------------
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Redirect www to non-www (optional)
+    RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+    RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+    # Force HTTPS (optional, if SSL enabled)
+    RewriteCond %{HTTPS} !=on
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# -------------------------------------------------
+# START: Disable Caching (for development)
+# -------------------------------------------------
 <IfModule mod_expires.c>
     ExpiresActive Off
 </IfModule>
+
 <IfModule mod_headers.c>
     Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
 </IfModule>
+
+# -------------------------------------------------
+# START: Security Headers
+# -------------------------------------------------
+<IfModule mod_headers.c>
+    # Protect from Clickjacking
+    Header always append X-Frame-Options SAMEORIGIN
+    # Prevent XSS attacks
+    Header set X-XSS-Protection "1; mode=block"
+    # Prevent content sniffing
+    Header set X-Content-Type-Options nosniff
+</IfModule>
+
+# -------------------------------------------------
+# START: Custom 404 page
+# -------------------------------------------------
+ErrorDocument 404 /404.html
+
+# -------------------------------------------------
+# END of .htaccess
+# -------------------------------------------------
