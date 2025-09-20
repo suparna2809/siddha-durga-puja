@@ -29,7 +29,7 @@
       "url": "https://example.com",
       "logo": "https://example.com/assets/images/logo.png"
     }
-    </script>
+  </script>
   <style>
     /* Add horizontal gap between slick slides */
     .adv-slider .slick-slide {
@@ -46,17 +46,23 @@
 <body class="bg-light text-gray-800 font-sans"
   style="background-image: url('assets/images/back-ground3.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat; background-attachment: fixed;">
 
-  <!-- 🔹 Video Modal (autoplay teaser) -->
-  <div id="videoModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden">
-    <div class="relative w-11/12 md:w-3/4 lg:w-1/2 bg-black rounded-lg shadow-lg">
+  <!-- Video Modal -->
+  <div id="videoModal" class="fixed inset-0 z-50 bg-black bg-opacity-80 flex items-center justify-center p-4 hidden">
+    <!-- Modal Content -->
+    <div class="relative w-full max-w-3xl mx-auto bg-black rounded-lg overflow-hidden">
       <!-- Close Button -->
-      <button id="closeModal" class="absolute top-2 right-2 text-white text-2xl font-bold">&times;</button>
+      <button id="closeModal"
+        class="absolute top-3 right-3 z-50 bg-white text-black text-2xl font-bold rounded-full w-10 h-10 flex items-center justify-center shadow-lg hover:bg-red-600 hover:text-white transition duration-300">
+        &times;
+      </button>
 
-      <!-- Video -->
-      <video id="teaserVideo" class="w-full rounded-lg" autoplay controls>
-        <source src="assets/images/teaser/teaser1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+      <!-- Video Container -->
+      <div class="w-full" style="max-height: 80vh;">
+        <video id="teaserVideo" class="w-full h-full object-contain" autoplay controls>
+          <source src="assets/images/teaser/teaser1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
     </div>
   </div>
 
@@ -79,10 +85,8 @@
         class="hidden md:block bg-brand text-white px-4 py-2 rounded-full hover:bg-brand-dark">Subscribe</a>
       <div class="md:hidden">
         <button id="hamburger" class="text-gray-800 focus:outline-none">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4 6h16M4 12h16m-7 6h7"></path>
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
           </svg>
         </button>
       </div>
@@ -213,33 +217,27 @@
       <div class="container mx-auto px-6">
         <h2 class="text-3xl font-bold text-center mb-8 text-brand">Advertisements</h2>
         <div class="adv-slider space-x-6">
-          <div
-            class="mx-auto rounded-lg shadow-md bg-gray-100 min-h-96 flex items-center justify-center text-center"
+          <div class="mx-auto rounded-lg shadow-md bg-gray-100 min-h-96 flex items-center justify-center text-center"
             style="min-height: 10rem;">
             <span>Your advertisement will be displayed here...</span>
           </div>
-          <div
-            class="mx-auto rounded-lg shadow-md bg-gray-100 min-h-96 flex items-center justify-center text-center"
+          <div class="mx-auto rounded-lg shadow-md bg-gray-100 min-h-96 flex items-center justify-center text-center"
             style="min-height: 10rem;">
             <span>Your advertisement will be displayed here...</span>
           </div>
-          <div
-            class="mx-auto rounded-lg shadow-md bg-gray-100 min-h-96 flex items-center justify-center text-center"
+          <div class="mx-auto rounded-lg shadow-md bg-gray-100 min-h-96 flex items-center justify-center text-center"
             style="min-height: 10rem;">
             <span>Your advertisement will be displayed here...</span>
           </div>
-          <div
-            class="mx-auto rounded-lg shadow-md bg-gray-100 min-h-96 flex items-center justify-center text-center"
+          <div class="mx-auto rounded-lg shadow-md bg-gray-100 min-h-96 flex items-center justify-center text-center"
             style="min-height: 10rem;">
             <span>Your advertisement will be displayed here...</span>
           </div>
-          <div
-            class="mx-auto rounded-lg shadow-md bg-gray-100 min-h-96 flex items-center justify-center text-center"
+          <div class="mx-auto rounded-lg shadow-md bg-gray-100 min-h-96 flex items-center justify-center text-center"
             style="min-height: 10rem;">
             <span>Your advertisement will be displayed here...</span>
           </div>
-          <div
-            class="mx-auto rounded-lg shadow-md bg-gray-100 min-h-96 flex items-center justify-center text-center"
+          <div class="mx-auto rounded-lg shadow-md bg-gray-100 min-h-96 flex items-center justify-center text-center"
             style="min-height: 10rem;">
             <span>Your advertisement will be displayed here...</span>
           </div>
@@ -337,6 +335,14 @@
       // Auto close when video ends
       video.addEventListener("ended", function () {
         modal.classList.add("hidden");
+      });
+
+      // 🔹 Close modal when clicking outside the video container
+      modal.addEventListener("click", function (e) {
+        if (e.target === modal) {
+          modal.classList.add("hidden");
+          video.pause();
+        }
       });
     });
   </script>
