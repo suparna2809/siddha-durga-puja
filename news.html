@@ -48,7 +48,10 @@
     <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
       <a href="index.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Home</a>
       <a href="about.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">About Us</a>
-      <a href="cultural-events.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Cultural Events</a>
+      <a href="cultural-events.html"
+        class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Cultural Events</a>
+      <a href="sponsorship.html"
+        class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Sponsorship</a>
       <a href="members.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Members</a>
       <a href="gallery.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Gallery</a>
       <a href="news.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">News</a>
@@ -58,78 +61,142 @@
     </div>
   </header>
 
-  <!-- Main Gallery Albums -->
+  <!-- Main Content -->
   <main class="container mx-auto px-6 py-12">
-    <h1 class="text-4xl font-bold text-center mb-12 text-brand">News</h1>
+    <!-- Events Section -->
+    <section class="mb-16">
+      <h1 class="text-4xl font-bold text-center mb-12 text-brand">Events</h1>
 
-    <div id="albumGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-
-      <!-- Albums -->
-      <div data-album="award1"
-        class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
-        <img src="assets/images/award/award1.jpg" alt="award1" class="w-full h-56 object-cover">     
+      <!-- Tabs -->
+      <div class="flex justify-center mb-6">
+        <ul class="flex border-b w-full md:w-auto">
+          <li class="mr-1">
+            <a href="javascript:void(0)" data-tab="previous"
+              class="tab-link bg-red-600 text-white inline-block py-2 px-4 rounded-t font-semibold">
+              Previous
+            </a>
+          </li>
+          <li class="mr-1">
+            <a href="javascript:void(0)" data-tab="ongoing"
+              class="tab-link bg-green-600 text-white inline-block py-2 px-4 rounded-t font-semibold opacity-70">
+              Ongoing
+            </a>
+          </li>
+          <li class="mr-1">
+            <a href="javascript:void(0)" data-tab="upcoming"
+              class="tab-link bg-blue-600 text-white inline-block py-2 px-4 rounded-t font-semibold opacity-70">
+              Upcoming
+            </a>
+          </li>
+        </ul>
       </div>
 
-      <div data-album="award2"
-        class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
-        <img src="assets/images/award/award2.jpg" alt="award2" class="w-full h-56 object-cover">
+      <!-- Tab Contents -->
+      <!-- <div id="tabContents">
+        <!-- Previous Events -->
+        <div id="previous" class="tab-content grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div data-album="prev1"
+            class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
+            <img src="assets/images/events/events1.jpg" alt="Previous Event 1" class="w-full h-56 object-cover">
+          </div>
+          <div data-album="prev1"
+            class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
+            <img src="assets/images/events/events2.jpg" alt="Previous Event 1" class="w-full h-56 object-cover">
+          </div>
+          <div data-album="prev1"
+            class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
+            <img src="assets/images/events/events3.jpg" alt="Previous Event 1" class="w-full h-56 object-cover">
+          </div>
+        </div>
+
+        <!-- Ongoing Events -->
+        <div id="ongoing" class="tab-content hidden grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div data-album="ongoing1"
+            class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
+            <!-- <img src="assets/images/events/events2.jpg" alt="Ongoing Event 1" class="w-full h-56 object-cover"> -->
+          </div>
+        </div>
+
+        <!-- Upcoming Events -->
+        <div id="upcoming" class="tab-content hidden grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div data-album="upcoming1"
+            class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
+            <!-- <img src="assets/images/events/events3.jpg" alt="Upcoming Event 1"
+              class="w-full h-56 object-cover"> -->
+          </div>
+        </div>
+      </div> -->
+    </section>
+
+    <!-- Awards & Highlights -->
+    <section>
+      <h1 class="text-4xl font-bold text-center mb-12 text-brand">Awards & Highlights</h1>
+      <div id="albumGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div data-album="award1"
+          class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
+          <img src="assets/images/award/award1.jpg" alt="award1" class="w-full h-56 object-cover">
+        </div>
+        <div data-album="award2"
+          class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
+          <img src="assets/images/award/award2.jpg" alt="award2" class="w-full h-56 object-cover">
+        </div>
       </div>
-    </div>
+    </section>
   </main>
 
   <!-- Lightbox -->
-<div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center hidden z-50">
-  <button id="closeLightbox" class="absolute top-4 right-6 text-white text-3xl">&times;</button>
-
-  <!-- Image -->
-  <img id="lightboxImage" src="" alt="lightbox image" class="max-h-[80vh] max-w-[90vw] hidden transition-opacity duration-500">
-
-  <!-- Video -->
-  <video id="lightboxVideo" class="max-h-[80vh] max-w-[90vw] hidden" controls>
-    <source src="" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-
-  <!-- Caption -->
-  <div id="lightboxCaption" class="absolute bottom-6 text-white text-lg"></div>
-
-  <!-- Navigation -->
-  <button id="prevImage" class="absolute left-6 text-white text-4xl">&#10094;</button>
-  <button id="nextImage" class="absolute right-6 text-white text-4xl">&#10095;</button>
-</div>
-
-
-
+  <div id="lightbox"
+    class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center hidden z-50">
+    <button id="closeLightbox" class="absolute top-4 right-6 text-white text-3xl">&times;</button>
+    <img id="lightboxImage" src="" alt="lightbox image"
+      class="max-h-[80vh] max-w-[90vw] hidden transition-opacity duration-500">
+    <video id="lightboxVideo" class="max-h-[80vh] max-w-[90vw] hidden" controls>
+      <source src="" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div id="lightboxCaption" class="absolute bottom-6 text-white text-lg"></div>
+    <button id="prevImage" class="absolute left-6 text-white text-4xl">&#10094;</button>
+    <button id="nextImage" class="absolute right-6 text-white text-4xl">&#10095;</button>
+  </div>
 
   <!-- Footer -->
   <footer class="bg-gray-800 text-white py-8 mt-72">
-        <div class="container mx-auto px-6">
-            <div class="text-center text-gray-400">
-                &copy; 2025 Lakeville Durga Puja. All Rights Reserved.
-            </div>
-        </div>
-    </footer>
+    <div class="container mx-auto px-6">
+      <div class="text-center text-gray-400">
+        &copy; 2025 Lakeville Durga Puja. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
 
   <script>
-    // Albums (group images + videos by date)
+    // Albums (Events + Awards)
     const albums = {
+      "prev1": [
+        "assets/images/events/events1.jpg",
+        "assets/images/events/events2.jpg",
+        "assets/images/events/events3.jpg",
+      ],
+      "ongoing1": [
+      ],
+      "upcoming1": [
+      ],
       "award1": [
-        "assets/images/award/award1.jpg",
+        "assets/images/award/award1.jpg"
       ],
       "award2": [
-        "assets/images/award/award2.jpg",
+        "assets/images/award/award2.jpg"
       ]
     };
 
     let currentImages = [];
     let currentIndex = 0;
 
-    // Open album when clicked
+    // Open album
     document.querySelectorAll(".album-card").forEach(card => {
       card.addEventListener("click", () => {
-        const date = card.getAttribute("data-album");
-        if (albums[date]) {
-          openLightbox(albums[date]);
+        const album = card.getAttribute("data-album");
+        if (albums[album]) {
+          openLightbox(albums[album]);
         }
       });
     });
@@ -150,7 +217,6 @@
       const currentFile = currentImages[currentIndex];
       const isVideo = currentFile.endsWith(".mp4");
 
-      // Hide both first
       img.classList.add("hidden");
       video.classList.add("hidden");
       video.pause();
@@ -160,16 +226,8 @@
         video.load();
         video.classList.remove("hidden");
       } else {
-        img.classList.remove("fade-enter-active");
-        void img.offsetWidth; // restart animation
         img.src = currentFile;
         img.classList.remove("hidden");
-
-        img.classList.add("fade-enter");
-        setTimeout(() => {
-          img.classList.add("fade-enter-active");
-          img.classList.remove("fade-enter");
-        }, 10);
       }
 
       caption.innerText = `${currentIndex + 1} of ${currentImages.length}`;
@@ -190,7 +248,24 @@
       document.getElementById("lightbox").classList.add("hidden");
       document.getElementById("lightboxVideo").pause();
     });
+
+    // Tabs
+    const tabLinks = document.querySelectorAll(".tab-link");
+    const tabContents = document.querySelectorAll(".tab-content");
+
+    tabLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        tabContents.forEach(content => content.classList.add("hidden"));
+        tabLinks.forEach(tab => tab.classList.add("opacity-70"));
+
+        const tabId = link.getAttribute("data-tab");
+        document.getElementById(tabId).classList.remove("hidden");
+
+        link.classList.remove("opacity-70");
+      });
+    });
   </script>
 
 </body>
+
 </html>
