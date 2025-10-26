@@ -37,10 +37,8 @@
         class="hidden md:block bg-brand text-white px-4 py-2 rounded-full hover:bg-brand-dark">Subscribe</a>
       <div class="md:hidden">
         <button id="hamburger" class="text-gray-800 focus:outline-none">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4 6h16M4 12h16m-7 6h7"></path>
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
           </svg>
         </button>
       </div>
@@ -48,10 +46,8 @@
     <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
       <a href="index.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Home</a>
       <a href="about.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">About Us</a>
-      <a href="cultural-events.html"
-        class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Cultural Events</a>
-      <a href="sponsorship.html"
-        class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Sponsorship</a>
+      <a href="cultural-events.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Cultural Events</a>
+      <a href="sponsorship.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Sponsorship</a>
       <a href="members.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Members</a>
       <a href="gallery.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Gallery</a>
       <a href="news.html" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">News</a>
@@ -92,46 +88,70 @@
       </div>
 
       <!-- Tab Contents -->
-      <!-- <div id="tabContents">
+      <div id="tabContents">
         <!-- Previous Events -->
         <div id="previous" class="tab-content grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          <div data-album="prev1"
+          <div data-album="NewsStatesman"
             class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
+            <img src="assets/images/events/NewsStatesman.jpeg" alt="Previous Event 1" class="w-full h-56 object-cover">
+          </div>
+          <div data-album="AbpAnandaCoverage"
+            class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
+            <a href="https://youtu.be/qQhu15n3ol0" target="_blank" rel="noopener noreferrer">
+              <img src="https://img.youtube.com/vi/qQhu15n3ol0/hqdefault.jpg" alt="Previous Event 2" class="w-full h-56 object-cover">
+            </a>
+          </div>
+          <div data-album="BorolinUtkarshCoverage"
+            class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
+            <a href="https://www.facebook.com/share/p/1BC5v2Qssu/" target="_blank" rel="noopener noreferrer">
+              <img src="assets/images/events/facebook.jpg" alt="Previous Event 2" class="w-full h-56 object-cover">
+            </a>
+          </div>
+          <div data-album="BorolinUtkarshCoverage"
+            class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
+            <a href="https://business.facebook.com/News18Bangla/videos/2217684918697705" target="_blank" rel="noopener noreferrer">
+              <img src="assets/images/events/reel.jpg" alt="Previous Event 2" class="w-full h-56 object-cover">
+            </a>
+          </div>
+          <div data-album="events1"
+            class="album-card bg-white rounded-xl shadow-+16+lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
             <img src="assets/images/events/events1.jpg" alt="Previous Event 1" class="w-full h-56 object-cover">
           </div>
-          <div data-album="prev1"
+          <div data-album="events2"
             class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
             <img src="assets/images/events/events2.jpg" alt="Previous Event 1" class="w-full h-56 object-cover">
           </div>
-          <div data-album="prev1"
+          <div data-album="events3"
             class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
             <img src="assets/images/events/events3.jpg" alt="Previous Event 1" class="w-full h-56 object-cover">
           </div>
-        </div>
-
-        <!-- Ongoing Events -->
-        <div id="ongoing" class="tab-content hidden grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          <div data-album="ongoing1"
-            class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
-            <!-- <img src="assets/images/events/events2.jpg" alt="Ongoing Event 1" class="w-full h-56 object-cover"> -->
+          <!-- Ongoing Events -->
+          <div id="ongoing" class="tab-content hidden grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div data-album="ongoing1"
+              class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
+              <!-- <img src="assets/images/events/events2.jpg" alt="Ongoing Event 1" class="w-full h-56 object-cover"> -->
+            </div>
           </div>
-        </div>
 
-        <!-- Upcoming Events -->
-        <div id="upcoming" class="tab-content hidden grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          <div data-album="upcoming1"
-            class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
-            <!-- <img src="assets/images/events/events3.jpg" alt="Upcoming Event 1"
+          <!-- Upcoming Events -->
+          <div id="upcoming" class="tab-content hidden grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div data-album="upcoming1"
+              class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
+              <!-- <img src="assets/images/events/events3.jpg" alt="Upcoming Event 1"
               class="w-full h-56 object-cover"> -->
+            </div>
           </div>
         </div>
-      </div> -->
     </section>
 
     <!-- Awards & Highlights -->
     <section>
       <h1 class="text-4xl font-bold text-center mb-12 text-brand">Awards & Highlights</h1>
       <div id="albumGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div data-album="award0"
+          class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
+          <img src="assets/images/events/prize.jpeg" alt="award1" class="w-full h-56 object-cover">
+        </div>
         <div data-album="award1"
           class="album-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition">
           <img src="assets/images/award/award1.jpg" alt="award1" class="w-full h-56 object-cover">
@@ -145,8 +165,7 @@
   </main>
 
   <!-- Lightbox -->
-  <div id="lightbox"
-    class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center hidden z-50">
+  <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center hidden z-50">
     <button id="closeLightbox" class="absolute top-4 right-6 text-white text-3xl">&times;</button>
     <img id="lightboxImage" src="" alt="lightbox image"
       class="max-h-[80vh] max-w-[90vw] hidden transition-opacity duration-500">
@@ -171,10 +190,17 @@
   <script>
     // Albums (Events + Awards)
     const albums = {
-      "prev1": [
-        "assets/images/events/events1.jpg",
-        "assets/images/events/events2.jpg",
-        "assets/images/events/events3.jpg",
+      "events1": [
+        "assets/images/events/events1.jpg"
+      ],
+      "events2": [
+        "assets/images/events/events2.jpg"
+      ],
+      "events3": [
+        "assets/images/events/events3.jpg"
+      ],
+      "NewsStatesman": [
+        "assets/images/events/NewsStatesman.jpeg"
       ],
       "ongoing1": [
       ],
